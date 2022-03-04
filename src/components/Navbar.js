@@ -3,7 +3,6 @@ import classes from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [show, setShow] = useState(false);
-
   const showHamburger = () => {
     setShow(!show);
   };
@@ -15,6 +14,9 @@ const Navbar = () => {
 
       {show && (
         <div className={show && classes.showHamburger}>
+          <span className={classes.x} onClick={showHamburger}>
+            X
+          </span>
           <Link to='/' className={classes.hamburgerLinks}>
             home
           </Link>

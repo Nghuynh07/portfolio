@@ -1,7 +1,14 @@
-// import { Outlet } from "react-router-dom";
+import { useState } from "react";
+import Contact from "./Contact";
 import classes from "./Home.module.css";
-import { Link } from "react-router-dom";
+
 const Home = () => {
+  const [show, setShow] = useState(false);
+
+  const showContact = () => {
+    setShow(!show);
+  };
+
   return (
     <div className={classes.home}>
       <div className={classes.letters}>
@@ -19,9 +26,10 @@ const Home = () => {
         <span className={classes.n}>n</span>
       </div>
       <h3>| full-stack developer |</h3>
-      <Link to='contact' className={classes.contacts}>
+      <button onClick={showContact} className={classes.contactButton}>
         Contact
-      </Link>
+      </button>
+      {show && <Contact />}
     </div>
   );
 };

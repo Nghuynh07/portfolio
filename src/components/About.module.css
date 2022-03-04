@@ -1,2 +1,51 @@
+.aboutContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+
+  justify-items: center;
+  /* outline: 1px solid white; */
+}
+
 .about {
+  font-size: 15rem;
+  opacity: 0.1;
+  background-blend-mode: darken;
+  padding: 2rem;
+
+  justify-self: center;
+  align-self: center;
+}
+
+.aboutPara {
+  padding: 2rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.2rem;
+  line-height: 1.8rem;
+  text-transform: capitalize;
+  white-space: pre-wrap;
+}
+
+@media screen and (max-width: 1850px) {
+  .about {
+    font-size: 14rem;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .about {
+    font-size: 13rem;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .about {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .about {
+    font-size: 10rem;
+  }
 }
