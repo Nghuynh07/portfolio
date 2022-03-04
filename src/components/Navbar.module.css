@@ -1,0 +1,133 @@
+.navbar {
+  height: 10vh;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.navbarContainer {
+  width: 60vw;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 1fr;
+
+  justify-items: space-between;
+}
+.navbarLogo,
+.navbarLogo:active,
+.navbarLogo:link,
+.navbarLogo:visited {
+  justify-self: end;
+  align-self: center;
+  font-size: 3rem;
+  text-decoration: none;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbarLinksContainer {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarLinks,
+.navbarLinks:active,
+.navbarLinks:link,
+.navbarLinks:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  letter-spacing: 0.3rem;
+  border: 2px solid transparent;
+  transition: border 400ms, box-shadow 400ms;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbarLinks:not(first-child) {
+  margin-left: 3rem;
+}
+
+.navbarLinks:hover {
+  border: 2px solid orangered;
+  box-shadow: 0 0.5rem 2rem rgba(255, 69, 0, 0.4);
+}
+
+.hidden {
+  position: absolute;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: orangered;
+  cursor: pointer;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.hidden {
+  top: 5rem;
+  left: 4rem;
+}
+
+.hidden::after,
+.hidden::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: orangered;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hidden::after {
+  top: 1rem;
+}
+.hidden::before {
+  top: -1rem;
+}
+
+.showHamburger {
+  background-color: #333;
+  position: absolute;
+  top: 4rem;
+  left: 7rem;
+  height: max-content;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: visibility 0;
+  text-align: center;
+  visibility: hidden;
+}
+.hamburgerLinks,
+.hamburgerLinks:active,
+.hamburgerLinks:visited,
+.hamburgerLinks:link {
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  transition: background-color 500ms;
+}
+
+.hamburgerLinks:hover {
+  background-color: #999;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    visibility: hidden;
+  }
+  .showHamburger {
+    visibility: visible;
+  }
+  .hidden {
+    visibility: visible;
+  }
+}

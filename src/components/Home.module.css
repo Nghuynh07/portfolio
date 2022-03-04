@@ -1,0 +1,114 @@
+.home {
+  width: 100vw;
+  margin: auto;
+  margin-top: 20rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-blend-mode: overlay;
+
+  display: grid;
+  grid-template-columns: minmax(auto-fit, min-content);
+  padding: 1rem;
+  justify-items: center;
+
+  color: rgba(255, 255, 255, 0.5);
+  /* outline: 1px solid white; */
+}
+
+.home span {
+  font-weight: bold;
+  font-size: 10rem;
+  position: relative;
+  transition: color 500ms;
+  letter-spacing: 1rem;
+  justify-self: center;
+}
+
+.home span:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.home h3 {
+  font-size: 4rem;
+  margin-top: 2rem;
+  width: max-content;
+  letter-spacing: 0.5rem;
+}
+
+/* .letters {
+  width: 60vw;
+  display: grid;
+  outline: 1px solid white;
+  grid-template-columns: repeat(10, minmax(min-content, 1fr));
+} */
+.contacts {
+  list-style: none;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 2rem 3rem;
+  border-radius: 5px;
+  margin-top: 5rem;
+  box-shadow: 0 0.1rem 1rem rgba(255, 69, 0, 0.4);
+  font-size: 2.5rem;
+}
+
+.contacts:active,
+.contacts:visited,
+.contacts:link {
+  color: orangered;
+}
+.contacts:hover {
+  scale: 0.97;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 1000px) {
+  .home span {
+    font-size: 7rem;
+  }
+
+  .home h3 {
+    font-size: 2.5rem;
+  }
+
+  .contacts {
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home span {
+    font-size: 6rem;
+  }
+
+  .home h3 {
+    font-size: 2rem;
+  }
+
+  .contacts {
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .home span {
+    font-size: 5rem;
+  }
+
+  .home h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .home span {
+    font-size: 4rem;
+  }
+
+  .home h3 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,9 @@
+.container {
+  width: 100vw;
+  background-color: beige;
+  grid-template-columns:
+    minmax(min-content, 1fr) repeat(10, minmax(min-content, 15rem))
+    minmax(min-content, 1fr);
+  grid-template-rows: repeat(auto-fit, min-content);
+  display: grid;
+}
