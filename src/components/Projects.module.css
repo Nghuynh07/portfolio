@@ -1,2 +1,13 @@
 .portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  font-size: 10rem;
+  color: rgba(255, 115, 0, 0.5);
+}
+
+.left,
+.right {
+  transform: rotate(180deg);
 }

@@ -34,7 +34,6 @@
 }
 
 .navbarLinks,
-.navbarLinks:active,
 .navbarLinks:link,
 .navbarLinks:visited {
   text-decoration: none;
@@ -53,9 +52,11 @@
 .navbarLinks:hover {
   border: 2px solid orangered;
   box-shadow: 0 0.5rem 2rem rgba(255, 69, 0, 0.4);
-  scale: 0.97;
 }
 
+.navbarLinks:active {
+  transform: scale(0.9);
+}
 .hidden {
   position: absolute;
   width: 3rem;
