@@ -1,23 +1,25 @@
-import classes from "./About.module.css";
-import Layout from "./Layout";
 const About = () => {
   return (
-    <Layout>
-      <div className={classes.aboutContainer}>
-        <h1 className={classes.about}>about</h1>
-        <p className={classes.aboutPara}>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
+    <div className='about flex'>
+      <div className='about-heading flex'>
+        <h1>Hello</h1>
+        <h1>I'm</h1>
+        <h1 className='section-title'>Huynh</h1>
+        <p>Welcome to my website</p>
+      </div>
+      <div className='about-text-container flex'>
+        <p className='about-text'>
+          Hello there! I am a full-stack developer. After 10 years in
+          healthcare, I wanted to try change my career into something
+          challenging.I remember looking at websites and wonder how were they
+          done? Who create these websites? How are they created? The more I do
+          research the more I became inspired. It all started with a thought.
+          What if I can do that? I always knew I have talent. I always knew that
+          I can do more, but in what area? Deep down I know I wasn't using my
+          talent to its full potential. At my old job, everything I do I was #1
         </p>
       </div>
-    </Layout>
+    </div>
   );
 };
 

@@ -1,20 +1,48 @@
-import { Routes, Route } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import About from "./components/About";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />}>
-          <Route path='contact' element={<Contact />}></Route>
-        </Route>
-        <Route path='about' element={<About />}></Route>
-        <Route path='projects' element={<Projects />}></Route>
-      </Routes>
+    <div className='container'>
+      <div className='background'></div>
+      <header className='flex'>
+        <div className='heading-wrapper flex'>
+          <h1 id='frontend'>front-end</h1>
+          <h1 id='developer'>developer</h1>
+          <div className='text-wrapper flex'>
+            <p className='inter'>
+              Interdisciplinary Visual Art and Pharmacy background
+            </p>
+            <div className='creativity flex'>
+              <p>Creativity</p>
+              <p>Simplicity</p>
+              <p>Aesthetic</p>
+            </div>
+          </div>
+        </div>
+        <div className='navigation'>
+          <Link to='/about' className='nav-link flex'>
+            about
+          </Link>
+
+          <Link to='/projects' className='nav-link flex'>
+            projects
+          </Link>
+
+          <Link to='/contact' className='nav-link flex'>
+            contact
+          </Link>
+        </div>
+      </header>
+      <div className='components flex'>
+        <Routes>
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </div>
     </div>
   );
 }
