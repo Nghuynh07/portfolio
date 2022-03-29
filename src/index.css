@@ -145,6 +145,8 @@ header {
   background: orangered;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
   color: transparent;
   text-transform: uppercase;
   width: 17rem;
@@ -504,12 +506,12 @@ header {
   }
   .contact {
     width: 100vw;
-    height: 40vh;
+    height: 85%;
   }
 
   .contact-wrapper {
     width: 40%;
-    height: 95%;
+    height: 85%;
     transform: rotateY(-5deg) translateX(130%);
   }
 
@@ -548,11 +550,27 @@ header {
   .about {
     padding: 2rem;
   }
+  .contact-wrapper {
+    width: 45%;
+    height: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    padding: 2rem;
+  }
+  .contact-wrapper {
+    width: 55%;
+  }
 }
 
 @media (max-width: 850px) {
   .about {
     width: 60vw;
+  }
+  .contact-wrapper {
+    width: 65%;
   }
 }
 
@@ -571,11 +589,17 @@ header {
   .about {
     width: 80vw;
   }
+  .contact-wrapper {
+    width: 80%;
+  }
 }
 
 @media (max-width: 560px) {
   .inter {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .contact-wrapper {
+    width: 80%;
   }
 }
 
@@ -588,5 +612,44 @@ header {
   }
   .inter {
     font-size: 1.5rem;
+  }
+  .contact-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 485px) {
+  .inter {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .inter {
+    font-size: 1.3rem;
+  }
+  .creativity p {
+    font-size: 1.8rem;
+  }
+  .nav-link {
+    font-size: 1.4rem;
+    width: 11rem;
+    height: 4.5rem;
+  }
+  .contact-wrapper {
+    width: 90%;
+    transform: rotateY(-3deg) translateX(130%);
+  }
+  .input-wrapper input::placeholder {
+    font-size: 1.5rem;
+  }
+  .textarea {
+    font-size: 1.5rem;
+  }
+  .input-wrapper input {
+    font-size: 1.5rem;
+  }
+  .contact-heading {
+    font-size: 3rem;
   }
 }
