@@ -14,6 +14,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -195,6 +196,8 @@ header {
 }
 
 .about {
+  position: fixed;
+  top: -60vh;
   width: 65%;
   height: 40vh;
   position: relative;
@@ -203,7 +206,20 @@ header {
   background-color: rgba(51, 51, 51, 0.111);
   opacity: 0;
   visibility: hidden;
-  animation: fadeAnimation 1.5s 0.3s ease-in-out forwards;
+  animation: aboutAnimation 1.5s ease-in-out forwards;
+}
+
+@keyframes aboutAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    top: -60vh;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
 }
 
 .about-heading,
@@ -290,7 +306,7 @@ header {
 }
 
 .about-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
   text-align: justify;
   opacity: 0;
@@ -303,4 +319,159 @@ header {
 
 .about:hover .about-text-container::before {
   width: 100%;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.9);
+  position: relative;
+  perspective: 100rem;
+}
+
+.contact-wrapper {
+  position: relative;
+  width: 65%;
+  flex-direction: column;
+  background-color: #202020;
+  padding: 2rem;
+  /* outline: 1px solid white; */
+  transform-style: preserve-3d;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateY(-12deg) translateZ(0) translateX(130%);
+  animation: contactAnimation 1.5s ease-out forwards;
+}
+
+@keyframes contactAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateY(-12deg) translateZ(0) translateX(130%);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: rotateY(-12deg) translateZ(0) translateX(0);
+  }
+}
+
+/* .contact-wrapper::before {
+  background-color: #202020;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  bottom: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  background-color: #fff;
+  transform: rotateX(-270deg);
+  box-shadow: inset 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5),
+    inset -0.2rem -0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  transform-style: preserve-3d;
+  transform-origin: right;
+  background-color: #fff;
+  transform: rotateY(-90deg);
+  background-color: #202020;
+} */
+
+.contact-heading {
+  font-size: 4rem;
+  font-weight: 400;
+  color: rgba(255, 160, 0, 0.7);
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+  transition: opacity 0.3s;
+  align-self: start;
+  background-color: rgba(255, 160, 0, 0.7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 2s 0.5s ease-in-out forwards;
+}
+.form {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 2s 1s ease-in-out forwards;
+}
+
+.input-wrapper {
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0.1rem solid rgba(255, 160, 0, 0.7);
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 0.1rem;
+  height: 5rem;
+  border-radius: 10px;
+}
+
+.input-wrapper input::placeholder {
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.textarea {
+  height: 20rem;
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #aaa;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border: 0.1rem solid rgba(255, 160, 0, 0.7);
+  border-radius: 10px;
+}
+
+.form-btn {
+  width: 20rem;
+  height: 5rem;
+  background-color: rgba(255, 160, 0, 0.7);
+  border: none;
+  align-self: flex-start;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 2rem;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  border-radius: 10rem;
+  box-shadow: inset 0.3rem 0.3rem 0.3rem rgba(255, 160, 0, 0.7),
+    inset -0.3rem -0.3rem 0.3rem rgba(255, 160, 0, 0.7);
+  background-color: rgba(255, 160, 0, 0.7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 2s 1.5s ease-in-out forwards;
+}
+
+.form-btn:hover {
+  background-color: rgba(255, 160, 0, 0.9);
 }

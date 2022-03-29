@@ -9,14 +9,13 @@ const About = () => {
       </div>
       <div className='about-text-container flex'>
         <p className='about-text'>
-          Hello there! I am a full-stack developer. After 10 years in
-          healthcare, I wanted to try change my career into something
-          challenging.I remember looking at websites and wonder how were they
-          done? Who create these websites? How are they created? The more I do
-          research the more I became inspired. It all started with a thought.
-          What if I can do that? I always knew I have talent. I always knew that
-          I can do more, but in what area? Deep down I know I wasn't using my
-          talent to its full potential. At my old job, everything I do I was #1
+          Hello There! I am a front-end developer. I remember looking at
+          websites and wondering how these beautiful pages were created. Over
+          the years, my curiosity grew and in March, 2021 I decided to slowly
+          transition my career into programming after 10 years in pharmacy
+          setting. It wasn't easy, but it was a start. I immediately enrolled in
+          coding boot camp and started my programming journey. I fell in love
+          with front-end development during the boot camp.
         </p>
       </div>
     </div>
