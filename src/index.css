@@ -28,26 +28,31 @@ html {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #000;
+  background: rgb(0, 0, 0);
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(40rem, 1fr));
+}
+.components {
+  z-index: 100;
+  display: grid;
+  place-items: center;
 }
 
 header {
-  width: 50vw;
-  height: 100vh;
-  flex-direction: column;
   perspective: 100rem;
   position: relative;
+  display: grid;
+  place-items: center;
 }
 
 .heading-wrapper {
-  flex-direction: column;
-  width: 100%;
+  display: grid;
 }
 
 #frontend,
@@ -70,9 +75,9 @@ header {
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
-
   opacity: 0;
   visibility: hidden;
+  justify-self: center;
 }
 
 #frontend {
@@ -84,11 +89,12 @@ header {
 }
 
 .text-wrapper {
-  flex-direction: column;
-  margin-top: 3rem;
+  display: grid;
+  place-items: center;
 }
 
 .inter {
+  margin: 3rem 0;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   font-style: italic;
@@ -100,14 +106,19 @@ header {
   animation: fadeAnimation 2s 1s linear forwards;
   opacity: 0;
   visibility: hidden;
+  text-align: center;
 }
 .creativity {
-  margin-top: 3rem;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-column-gap: 3rem;
+  margin-bottom: 5rem;
 }
 
 .creativity p {
-  font-size: 2.2rem;
-  margin: 0 2rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   font-style: normal;
   background: #80deea;
@@ -131,27 +142,26 @@ header {
 }
 
 .navigation {
-  margin-top: 5rem;
-  display: flex;
-  align-items: center;
   transform-style: preserve-3d;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
 
 .nav-link {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   letter-spacing: 0.1rem;
   font-weight: 300;
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
   background: orangered;
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -ms-background-clip: text;
   color: transparent;
+  background-clip: text;
   text-transform: uppercase;
-  width: 17rem;
-  height: 6rem;
-  margin: 0 3rem;
+  width: 12rem;
+  height: 4.5rem;
   padding: 1rem 2rem;
   border: 2px solid transparent;
   box-shadow: inset 0 0.1rem 0.2rem rgba(255, 255, 255, 0.9),
@@ -191,141 +201,111 @@ header {
   }
 }
 
-.components {
-  width: 50vw;
-  height: 100vh;
-  z-index: 100;
-}
-
 .about {
-  position: fixed;
-  top: -60vh;
-  width: 65%;
-  height: 40vh;
-  position: relative;
   border-radius: 10px;
   color: #fff;
-  background-color: rgba(51, 51, 51, 0.111);
+  background-color: rgba(51, 51, 51, 0.11);
   opacity: 0;
   visibility: hidden;
-  animation: aboutAnimation 1.5s ease-in-out forwards;
+  animation: aboutAnimation 2s ease-in-out forwards;
+  transform: translateY(-100%);
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  width: 60%;
+  position: relative;
+  height: 50%;
 }
 
 @keyframes aboutAnimation {
   0% {
     opacity: 0;
     visibility: hidden;
-    top: -60vh;
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
     visibility: visible;
-    top: 0;
+    transform: translateY(0);
   }
 }
 
-.about-heading,
-.about-text-container {
+.about-heading {
   position: absolute;
+  border-radius: 0.5rem;
+  transition: filter 0.5s, transform 0.5s 0.5s;
+  display: grid;
+  place-content: center;
+  transition: filter 0.5s, scale 0.5s;
 }
 
-.about-heading {
-  width: 100%;
-  height: 60%;
-  padding: 5rem;
-  flex-direction: column;
-  border-radius: 0.5rem;
-  justify-content: space-around;
-  transition: filter 0.5s, transform 0.5s 0.5s;
+.section-title {
+  margin: 2rem 0;
 }
 
 .about-heading p {
   font-size: 2rem;
-  margin-top: 1rem;
   opacity: 0;
   visibility: hidden;
   animation: fadeAnimation 2s 2s linear forwards;
+  transition: transform 0.5s 1s;
 }
 
 .about-heading h1:nth-child(1) {
   animation: fadeAnimation 2s 0.5s ease-in-out forwards;
   opacity: 0;
   visibility: hidden;
+  transition: transform 0.5s;
 }
 
 .about-heading h1:nth-child(2) {
-  animation: fadeAnimation 2s 1s ease-in-out forwards;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.about-heading h1:nth-child(3) {
   font-size: 4rem;
   letter-spacing: 0.2rem;
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.9);
   opacity: 0;
   visibility: hidden;
   animation: fadeAnimation 2s 1.5s ease-in-out forwards;
+  transition: transform 0.5s 0.5s;
 }
+/* 
+.about:hover .about-heading h1:nth-child(1) {
+  transform: translate(-13rem, -13rem);
+}
+.about:hover .about-heading h1:nth-child(2) {
+  transform: translate(-13rem, -13rem);
+}
+
+.about:hover .about-heading p {
+  transform: translate(-13rem, 13rem);
+} */
 
 .about-text-container {
-  width: 100%;
-  height: 75%;
+  position: absolute;
+  display: grid;
   padding: 2rem;
-  position: relative;
-}
-
-.about-text-container::before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0.1rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  top: 0;
-  left: 0;
-  transition: width 1s 0.5s;
-}
-.about-text-container::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0.1rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  bottom: 0;
-  left: 0;
-  transition: width 1s 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .about:hover .about-heading {
-  filter: blur(10px);
-  transform: translateY(-100%);
+  filter: blur(30px);
+  scale: 0.9;
 }
 
-.about:hover .about-text {
+.about:hover .about-text-container {
   opacity: 1;
   visibility: visible;
-  transition: opacity 2s 1.5s, visibility 2s 1.5s;
+  transition: opacity 2s 0.5s, visibility 2s 0.5s;
 }
 
 .about-text {
   font-size: 1.4rem;
   letter-spacing: 0.2rem;
   text-align: justify;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.about:hover .about-text-container::after {
-  width: 100%;
-}
-
-.about:hover .about-text-container::before {
-  width: 100%;
+  line-height: 1.5;
 }
 
 .contact {
-  width: 100%;
-  height: 100vh;
   background-color: rgb(0, 0, 0, 0.9);
   position: relative;
   perspective: 100rem;
@@ -333,11 +313,7 @@ header {
 
 .contact-wrapper {
   position: relative;
-  width: 65%;
-  flex-direction: column;
   background-color: #202020;
-  padding: 2rem;
-  /* outline: 1px solid white; */
   transform-style: preserve-3d;
   opacity: 0;
   visibility: hidden;
@@ -358,42 +334,11 @@ header {
   }
 }
 
-/* .contact-wrapper::before {
-  background-color: #202020;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5rem;
-  bottom: 0;
-  left: 0;
-  transform-style: preserve-3d;
-  transform-origin: bottom;
-  background-color: #fff;
-  transform: rotateX(-270deg);
-  box-shadow: inset 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5),
-    inset -0.2rem -0.2rem 0.2rem rgba(0, 0, 0, 0.5);
-}
-
-.contact-wrapper::after {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 100%;
-  bottom: 0;
-  right: 0;
-  transform-style: preserve-3d;
-  transform-origin: right;
-  background-color: #fff;
-  transform: rotateY(-90deg);
-  background-color: #202020;
-} */
-
 .contact-heading {
   font-size: 4rem;
   font-weight: 400;
   color: rgba(255, 160, 0, 0.7);
   letter-spacing: 0.2rem;
-  margin-bottom: 3rem;
   transition: opacity 0.3s;
   align-self: start;
   background-color: rgba(255, 160, 0, 0.7);
@@ -406,9 +351,6 @@ header {
   animation: fadeAnimation 2s 0.5s ease-in-out forwards;
 }
 .form {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
   opacity: 0;
   visibility: hidden;
   animation: fadeAnimation 2s 1s ease-in-out forwards;
@@ -418,7 +360,6 @@ header {
 }
 
 .input-wrapper input {
-  width: 100%;
   padding: 0.5rem;
   margin: 1rem 0;
   background-color: rgba(255, 255, 255, 0.2);
@@ -437,9 +378,7 @@ header {
 }
 
 .textarea {
-  height: 20rem;
   resize: none;
-  width: 100%;
   padding: 1rem;
   letter-spacing: 0.2rem;
   background-color: rgba(255, 255, 255, 0.2);
@@ -478,178 +417,62 @@ header {
   background-color: rgba(255, 160, 0, 0.9);
 }
 
-.projects {
-}
-
-@media (max-width: 1550px) {
-  .form-btn {
-    width: 18rem;
-    height: 4.5rem;
-  }
-}
-
-@media (max-width: 1450px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .components {
-    width: 100vw;
-    height: 50vh;
-    z-index: 100;
-  }
-
-  header {
-    width: 100vw;
-    height: 50vh;
-  }
-  .contact {
-    width: 100vw;
-    height: 85%;
-  }
-
-  .contact-wrapper {
-    width: 40%;
-    height: 85%;
-    transform: rotateY(-5deg) translateX(130%);
-  }
-
-  .contact-heading {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .textarea {
-    height: 13rem;
-  }
-
-  .form-btn {
-    width: 17rem;
-    height: 4rem;
-    margin: 1rem 0;
-  }
-
-  .nav-link {
-    font-size: 1.6rem;
-    width: 12rem;
-    height: 5rem;
-  }
-  .about {
-    width: 45vw;
-    height: 80%;
-    padding: 3rem;
-  }
-  .about:hover .about-heading {
-    filter: blur(30px);
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 1200px) {
-  .about {
-    padding: 2rem;
-  }
-  .contact-wrapper {
-    width: 45%;
-    height: 85%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .about {
-    padding: 2rem;
-  }
-  .contact-wrapper {
-    width: 55%;
-  }
-}
-
-@media (max-width: 850px) {
-  .about {
-    width: 60vw;
-  }
-  .contact-wrapper {
-    width: 65%;
-  }
-}
-
-@media (max-width: 700px) {
-  .about-text {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .about {
-    width: 70vw;
-  }
-}
-@media (max-width: 650px) {
-  .about {
-    width: 80vw;
-  }
-  .contact-wrapper {
-    width: 80%;
-  }
-}
-
-@media (max-width: 560px) {
-  .inter {
-    font-size: 1.3rem;
-  }
-  .contact-wrapper {
-    width: 80%;
-  }
-}
-
 @media (max-width: 500px) {
-  .nav-link {
-    margin: 0 1.5rem;
+  #frontend,
+  #developer {
+    font-size: 3.5rem;
   }
-  .creativity p {
-    font-size: 2rem;
+  .text-wrapper {
+    width: 90%;
   }
-  .inter {
-    font-size: 1.5rem;
+  .about-text-container {
+    padding: 2rem;
   }
-  .contact-wrapper {
-    width: 80%;
-  }
-}
-
-@media (max-width: 485px) {
-  .inter {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 460px) {
   .inter {
     font-size: 1.3rem;
   }
   .creativity p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+  .navigation {
+    width: 90%;
   }
   .nav-link {
+    width: 10rem;
+    height: 5rem;
     font-size: 1.4rem;
-    width: 11rem;
-    height: 4.5rem;
+    display: grid;
+    place-content: center;
   }
-  .contact-wrapper {
-    width: 90%;
-    transform: rotateY(-3deg) translateX(130%);
+  .about {
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
-  .input-wrapper input::placeholder {
-    font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .about {
+    width: 65%;
+    height: 70%;
+    padding: 0;
   }
-  .textarea {
-    font-size: 1.5rem;
+  .about-text-container {
+    padding: 4rem;
   }
-  .input-wrapper input {
-    font-size: 1.5rem;
+}
+@media (max-width: 700px) {
+  .about {
+    width: 75%;
+    height: 70%;
+    padding: 0;
   }
-  .contact-heading {
-    font-size: 3rem;
+}
+
+@media (max-width: 630px) {
+  .about {
+    width: 85%;
+    height: 70%;
+    padding: 0;
   }
 }
