@@ -2,9 +2,9 @@ const About = () => {
   return (
     <div className='about'>
       <div className='about-heading'>
-        <h1>Hello</h1>
+        <h1>Hello & Welcome</h1>
         <h1 className='section-title'>I'm Huynh</h1>
-        <p>Welcome to my website</p>
+        <p>.H.N.</p>
       </div>
       <div className='about-text-container'>
         <p className='about-text'>

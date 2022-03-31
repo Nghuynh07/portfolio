@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <div className='contact flex'>
-      <div className='contact-wrapper flex'>
+    <div className='contact'>
+      <div className='contact-wrapper'>
         <h1 className='contact-heading'>Lets Talk</h1>
         <form className='form'>
           <div className='input-wrapper'>
