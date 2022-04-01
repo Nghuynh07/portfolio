@@ -1,6 +1,7 @@
 const Contact = () => {
   return (
     <div className='contact' id='contact'>
+      <h1 className='contact-title'>Contact</h1>
       <div className='contact-wrapper'>
         <h1 className='contact-heading'>Lets Talk</h1>
         <form className='form'>

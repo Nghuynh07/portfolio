@@ -15,6 +15,10 @@ const LandingPage = () => {
               <p>Aesthetic</p>
             </div>
           </div>
+          <div className='social-media'>
+            <a href='#github'>Github</a>
+            <a href='#linkedin'>LinkedIn</a>
+          </div>
         </div>
       </header>
     </>
