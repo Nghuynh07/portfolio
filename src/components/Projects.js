@@ -8,6 +8,9 @@ const Projects = () => {
         <h1 className='projects-title'>projects</h1>
         <div className={`project`}>
           <div className='img-container'>
+            <h3>
+              0<span>1</span>
+            </h3>
             <img src={sweeetmovies} alt='projectOne' />
           </div>
           <div className='project-wrapper'>
@@ -27,6 +30,9 @@ const Projects = () => {
         </div>
         <div className={`project `}>
           <div className='img-container'>
+            <h3>
+              0<span>2</span>
+            </h3>
             <img src={evff} alt='projectOne' />
           </div>
           <div className='project-wrapper'>
@@ -46,6 +52,9 @@ const Projects = () => {
         </div>
         <div className={`project `}>
           <div className='img-container'>
+            <h3>
+              0<span>3</span>
+            </h3>
             <img src={evff} alt='projectOne' />
           </div>
           <div className='project-wrapper'>
