@@ -218,6 +218,7 @@ header {
   width: 100%;
   height: 100%;
   /* outline: 1px solid white; */
+  place-items: center;
 }
 
 .frontend,
@@ -226,6 +227,7 @@ header {
   visibility: hidden;
   display: grid;
   grid-auto-flow: column;
+  grid-column-gap: 0.5rem;
   animation: frontEndAnimation 2s ease-in-out forwards;
 }
 
@@ -278,10 +280,7 @@ header {
   letter-spacing: 0.2rem;
   font-style: italic;
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.31);
-  background: #aaa;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgb(146, 136, 136);
   animation: fadeAnimation 2s 1s linear forwards;
   opacity: 0;
   visibility: hidden;
@@ -291,7 +290,6 @@ header {
 .social-media {
   position: absolute;
   bottom: 10vh;
-  /* width: 20rem; */
   height: 5rem;
   left: 50%;
   display: grid;
@@ -299,7 +297,6 @@ header {
   grid-template-columns: repeat(2, 1fr);
   transform: translateX(-50%);
   grid-column-gap: 5rem;
-  /* background-color: blue; */
 }
 
 .social-media a,
@@ -316,6 +313,15 @@ header {
   border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
   transition: background-color 0.5s, color 0.5s;
   text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 2s 1s linear forwards;
+}
+.social-media a:nth-child(1) {
+  animation-delay: 1.3s;
+}
+.social-media a:nth-child(2) {
+  animation-delay: 1.5s;
 }
 
 .social-media a:hover {
