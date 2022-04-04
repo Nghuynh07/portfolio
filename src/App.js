@@ -11,7 +11,7 @@ function App() {
       <LandingPage />
       <About />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

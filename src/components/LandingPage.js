@@ -40,6 +40,7 @@ const LandingPage = () => {
           <div className='social-media'>
             <a href='https://github.com/Nghuynh07'>GitHub</a>
             <a href='https://www.linkedin.com/in/huynhtnguyen/'>LinkedIn</a>
+            <a href='mailto: july31nth@gmail.com'>Email</a>
           </div>
         </div>
       </header>
