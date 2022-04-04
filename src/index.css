@@ -329,10 +329,9 @@ header {
 .about {
   grid-column: 2 / 12;
   grid-row: 2/3;
-  height: 35vh;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); */
-
+  grid-template-columns: minmax(42rem, 42rem);
+  grid-template-rows: minmax(40rem, 42rem);
   border-radius: 10px;
   color: #fff;
   background-color: rgba(51, 51, 51, 0.11);
@@ -340,9 +339,14 @@ header {
   visibility: hidden;
   animation: aboutAnimation 2s ease-in-out forwards;
   transform: translateY(-100%);
-  width: 40%;
   border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
   border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
+}
+
+.about-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
   position: relative;
 }
 
@@ -438,7 +442,7 @@ header {
   opacity: 0;
   visibility: hidden;
   animation: fadeAnimation 2s 1.5s ease-in-out forwards;
-  transition: transform 0.5s, filter 0.5s;
+  transition: filter 0.5s;
   justify-self: center;
   align-self: center;
   font-weight: 100;
@@ -458,7 +462,7 @@ header {
 }
 
 .about:hover .section-title {
-  transform: translateY(-20rem);
+  filter: blur(30px);
 }
 
 .about:hover .about-text-container {
@@ -476,14 +480,20 @@ header {
 }
 
 .contact {
-  position: relative;
-  perspective: 100rem;
-  display: grid;
-  place-items: center;
   grid-column: 2 / 12;
   grid-row: 4 / 5;
+  display: grid;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  place-content: center;
+}
+
+.contact-container {
+  perspective: 100rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(42rem, 1fr));
 }
 
 .contact-wrapper {
@@ -499,8 +509,6 @@ header {
   display: grid;
   grid-gap: 2rem;
   padding: 2rem;
-  width: 40%;
-  height: 50%;
   transition: transform 0.5s;
   border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
   border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
@@ -511,11 +519,9 @@ header {
   font-size: 7rem;
   text-transform: uppercase;
   color: rgb(170, 170, 170, 0.055);
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
   pointer-events: none;
   z-index: -1;
+  justify-self: center;
 }
 
 .contact-wrapper:hover {
@@ -541,11 +547,6 @@ header {
   animation: fadeAnimation 2s 1s ease-in-out forwards;
   display: grid;
   grid-gap: 2rem;
-  width: 100%;
-  height: 100%;
-}
-
-.input-wrapper {
 }
 
 .input-wrapper input {
@@ -597,6 +598,7 @@ header {
   border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
   border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
   background-color: rgba(51, 51, 51, 0.11);
+  padding: 0.5rem 1rem;
   animation: fadeAnimation 2s 1.5s ease-in-out forwards;
   transition: background-color 0.5s;
 }
@@ -608,7 +610,6 @@ header {
 
 /* Projects */
 .projects {
-  /* background-color: rgba(51, 51, 51, 0.11); */
   border-radius: 10px;
   animation: aboutAnimation 2s ease-in-out forwards;
   transform: translateY(-100%);
@@ -624,7 +625,6 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(35rem, 35rem));
   grid-gap: 6rem;
   position: relative;
-  /* outline: 1px solid white; */
 }
 
 .projects-title {
@@ -636,7 +636,6 @@ header {
   transform: translateX(-50%);
   pointer-events: none;
   z-index: -1;
-  /* outline: 1px solid white; */
   margin-top: 2rem;
 }
 
@@ -742,53 +741,18 @@ header {
 /* Projects Ends */
 
 @media (max-width: 1500px) {
-  .about {
-    width: 50%;
-  }
-  .contact-wrapper {
-    width: 50%;
-  }
 }
 
 @media (max-width: 1300px) {
-  .about {
-    width: 60%;
-  }
-  .contact-wrapper {
-    width: 60%;
-  }
 }
 
 @media (max-width: 1000px) {
-  .about {
-    width: 70%;
-  }
-  .contact-wrapper {
-    width: 70%;
-  }
 }
 
 @media (max-width: 750px) {
-  .about {
-    width: 90%;
-  }
-  .contact-wrapper {
-    width: 90%;
-  }
 }
 
 @media (max-width: 600px) {
-  .about {
-    width: 100%;
-    height: 60vh;
-  }
-  .contact-wrapper {
-    width: 100%;
-    height: 60vh;
-  }
-  .about:hover .section-title {
-    transform: translateY(-27rem);
-  }
   .navbar-links-container {
     position: absolute;
     margin-left: 7rem;
