@@ -1,3 +1,7 @@
+const container = document.querySelector("#root");
+
+console.log(container.children[0]);
+
 const LandingPage = () => {
   return (
     <>
@@ -16,8 +20,8 @@ const LandingPage = () => {
             </div>
           </div>
           <div className='social-media'>
-            <a href='#github'>Github</a>
-            <a href='#linkedin'>LinkedIn</a>
+            <a href='https://github.com/Nghuynh07'>GitHub</a>
+            <a href='https://www.linkedin.com/in/huynhtnguyen/'>LinkedIn</a>
           </div>
         </div>
       </header>
