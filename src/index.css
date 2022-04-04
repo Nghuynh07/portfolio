@@ -787,7 +787,7 @@ header {
     height: 60vh;
   }
   .about:hover .section-title {
-    transform: translateY(-25rem);
+    transform: translateY(-27rem);
   }
   .navbar-links-container {
     position: absolute;
