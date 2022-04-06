@@ -330,8 +330,8 @@ header {
   grid-column: 2 / 12;
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: minmax(42rem, 42rem);
-  grid-template-rows: minmax(40rem, 42rem);
+  grid-template-columns: minmax(40rem, 40rem);
+  grid-template-rows: minmax(42rem, 42rem);
   border-radius: 10px;
   color: #fff;
   background-color: rgba(51, 51, 51, 0.11);
@@ -609,19 +609,20 @@ header {
 
 /* Projects */
 .projects {
-  /* border-radius: 10px; */
   animation: aboutAnimation 2s ease-in-out forwards;
-  /* transform: translateY(-100%); */
   width: 100%;
   height: 100vh;
   grid-column: 2 / 12;
   grid-row: 3 / 4;
   display: grid;
   place-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(42rem, 42rem));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 40rem));
   grid-template-rows: repeat(auto-fit, minmax(25rem, 25rem));
   grid-gap: 5rem;
   position: relative;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 2s 1.5s ease-in-out forwards;
 }
 
 .projects-title {

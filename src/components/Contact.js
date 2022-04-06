@@ -7,10 +7,17 @@ const Contact = () => {
           <h1 className='contact-heading'>Lets Talk</h1>
           <form className='form'>
             <div className='input-wrapper'>
-              <input type='text' placeholder='Your Name' />
+              <input type='text' placeholder='Your Name' name='name' />
             </div>
             <div className='input-wrapper'>
-              <textarea placeholder='Your message' className='textarea' />
+              <input type='email' placeholder='Your Name' name='email' />
+            </div>
+            <div className='input-wrapper'>
+              <textarea
+                placeholder='Your message'
+                className='textarea'
+                name='message'
+              />
             </div>
             <input type='submit' value='Send' className='form-btn' />
           </form>

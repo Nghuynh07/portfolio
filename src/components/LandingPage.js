@@ -34,7 +34,7 @@ const LandingPage = () => {
               Interdisciplinary Visual Art and Pharmacy background
             </p>
             <p className='inter'>
-              Enjoy minimal designs and feeling good about it
+              Enjoy minimal designs and feel good about it
             </p>
           </div>
           <div className='social-media'>
