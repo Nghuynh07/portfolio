@@ -282,7 +282,8 @@ header {
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
   transform: translateX(-50%);
-  grid-column-gap: 3rem;
+  grid-column-gap: 2rem;
+  grid-auto-flow: row;
 }
 
 .social-media a,
@@ -302,6 +303,7 @@ header {
   opacity: 0;
   visibility: hidden;
   animation: fadeAnimation 2s 1s linear forwards;
+  /* outline: 1px solid white; */
 }
 .social-media a:nth-child(1) {
   animation-delay: 1.3s;

@@ -1,8 +1,8 @@
-import { useState } from "react";
+import resume from "../img/resume.pdf";
 
+import { useState } from "react";
 const Nav = () => {
   const [showLinks, setShowLinks] = useState(true);
-  const [focus, setFocus] = useState(false);
 
   const displayLinks = () => {
     setShowLinks(!showLinks);
@@ -34,6 +34,11 @@ const Nav = () => {
           <div className={`${showLinks && "show-links"}`}>
             <a href='#contact' className='navbar-link'>
               contact
+            </a>
+          </div>
+          <div className={`${showLinks && "show-links"}`}>
+            <a href={resume} className='navbar-link'>
+              resume
             </a>
           </div>
         </div>

@@ -1,7 +1,3 @@
-const container = document.querySelector("#root");
-
-console.log(container.children[0]);
-
 const LandingPage = () => {
   return (
     <>
