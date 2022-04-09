@@ -10,7 +10,7 @@ const Projects = () => {
         <div className={`project`}>
           <div className='img-container'>
             <h3>
-              0<span>2</span>
+              0<span>1</span>
             </h3>
             <img src={echovalley} alt='projectOne' />
           </div>
@@ -60,7 +60,7 @@ const Projects = () => {
         <div className={`project `}>
           <div className='img-container'>
             <h3>
-              0<span>1</span>
+              0<span>3</span>
             </h3>
             <img src={evff} alt='projectOne' />
           </div>
