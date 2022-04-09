@@ -31,11 +31,11 @@ const Nav = () => {
               projects
             </a>
           </div>
-          <div className={`${showLinks && "show-links"}`}>
+          {/* <div className={`${showLinks && "show-links"}`}>
             <a href='#contact' className='navbar-link'>
               contact
             </a>
-          </div>
+          </div> */}
           <div className={`${showLinks && "show-links"}`}>
             <a href={resume} className='navbar-link'>
               resume

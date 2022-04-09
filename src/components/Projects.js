@@ -15,7 +15,7 @@ const Projects = () => {
           </div>
           <div className='project-wrapper'>
             <h1 className='project-title'>Echo Valley Family Farm</h1>
-            <div className='project-1-technologies'>
+            <div className='project-1-technologies evff'>
               <p>HTML</p>
               <p>CSS</p>
               <p>Java(Springboot)</p>
