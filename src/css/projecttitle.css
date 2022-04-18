@@ -5,9 +5,20 @@
   place-items: center;
   font-size: 4rem;
   text-transform: uppercase;
-  color: rgb(170, 170, 170, 0.055);
+  color: rgb(170, 170, 170, 0.35);
   pointer-events: none;
   grid-column: 1 / -1;
   grid-row: 3 / 4;
   z-index: -1;
+  position: relative;
+}
+
+.projects-title::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: rgba(205, 92, 92, 0.3);
+  top: 0;
+  left: 0;
 }

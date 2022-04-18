@@ -39,7 +39,7 @@
   position: absolute;
   font-size: 9rem;
   text-transform: uppercase;
-  color: rgb(170, 170, 170, 0.055);
+  color: rgb(170, 170, 170, 0.15);
   right: 50%;
   top: 50%;
   transform: translateY(-50%) rotate(90deg);
