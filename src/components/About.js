@@ -1,14 +1,9 @@
 const About = () => {
   return (
-    <div className='about' id='about'>
+    <div className='about section'>
       <div className='about-wrapper'>
         <h1 className='about-title'>About</h1>
-        <div className='about-heading'>
-          <h1>Hello & Welcome</h1>
-          <h1 className='section-title'>I'm Huynh</h1>
-          <p>.H.N.</p>
-        </div>
-        <div className='about-text-container'>
+        <article className='about-text-container'>
           <p className='about-text'>
             I remember looking at websites and wondering how these beautiful
             pages were created. Over the years, my curiosity grew and in March,
@@ -18,7 +13,7 @@ const About = () => {
             journey. I fell in love with front-end development during boot camp
             and have been honing my skills as front-end developer ever since.
           </p>
-        </div>
+        </article>
       </div>
     </div>
   );

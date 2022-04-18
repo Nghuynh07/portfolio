@@ -1,0 +1,125 @@
+header {
+  perspective: 100rem;
+  position: relative;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 /2;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+header::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: rgba(205, 92, 92, 0.3);
+  top: 0;
+  left: 0;
+}
+
+.heading-wrapper {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+}
+
+.frontend,
+.developer {
+  opacity: 0;
+  visibility: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 0.5rem;
+  animation: frontEndAnimation 2s ease-in-out forwards;
+}
+
+.developer {
+  animation-delay: 0.5s;
+}
+
+.frontEndDeveloper {
+  font-size: 4rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.7);
+  background: #ddd;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-family: "Exo 2", sans-serif;
+  display: block;
+  width: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes frontEndAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0.6;
+    visibility: visible;
+  }
+}
+
+.inter {
+  margin: 3rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.31);
+  color: rgb(146, 136, 136);
+  animation: fadeAnimation 2s 1s linear forwards;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.social-media {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-auto-flow: row;
+  margin-bottom: 5rem;
+}
+
+.social-media a,
+.social-media:visited,
+.social-media a:link {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.9);
+  padding: 0.7rem 2.5rem;
+  background-color: transparent;
+  border-radius: 10px;
+  border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
+  border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
+  transition: background-color 0.5s, color 0.5s;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 2s 0.3s linear forwards;
+}
+
+.social-media a:hover {
+  background-color: rgb(119, 136, 153, 0.3);
+  /* color: rgb(255, 69, 0, 0.3); */
+}
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

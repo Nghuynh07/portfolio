@@ -1,0 +1,31 @@
+@media (max-width: 1100px) {
+  .projects {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-links-container {
+    position: absolute;
+    margin-left: 7rem;
+    flex-direction: column;
+    top: 2rem;
+    height: 20rem;
+    right: -4rem;
+    justify-content: space-evenly;
+  }
+  .hamburger {
+    margin-left: 2.5rem;
+  }
+  .navbar-links-container div {
+    height: 4rem;
+    width: 9rem;
+    margin: 0 0.5rem;
+  }
+  .navbar-link {
+    line-height: 4rem;
+  }
+  .projects {
+    height: 130vh;
+  }
+}

@@ -1,0 +1,127 @@
+.contact {
+  grid-column: 2 / 12;
+  grid-row: 4 / 5;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-content: center;
+}
+
+.contact-container {
+  perspective: 100rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+}
+
+.contact-wrapper {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(51, 51, 51, 0.11);
+  transform-style: preserve-3d;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateY(-15deg);
+  animation: fadeAnimation 1.5s ease-out forwards;
+  display: grid;
+  grid-gap: 2rem;
+  padding: 2rem;
+  transition: transform 0.5s;
+  border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
+  border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
+}
+
+.contact-title {
+  position: absolute;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: rgb(170, 170, 170, 0.055);
+  pointer-events: none;
+  z-index: -1;
+  justify-self: center;
+}
+
+.contact-wrapper:hover {
+  transform: rotateY(0deg);
+}
+
+.contact-heading {
+  font-size: 4rem;
+  font-weight: 400;
+  color: rgba(255, 69, 0, 0.3);
+  letter-spacing: 0.2rem;
+  transition: opacity 0.3s;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  animation: fadeAnimation 2s 0.5s ease-in-out forwards;
+}
+.form {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeAnimation 2s 1s ease-in-out forwards;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.input-wrapper input {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #aaa;
+  letter-spacing: 0.1rem;
+  height: 5rem;
+  width: 100%;
+  border-radius: 10px;
+  border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
+  border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
+}
+
+.input-wrapper input::placeholder {
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.textarea {
+  resize: none;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #aaa;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
+  border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
+  width: 100%;
+  height: 15rem;
+}
+
+.form-btn {
+  width: 20rem;
+  justify-self: start;
+  border: none;
+  font-size: 2rem;
+  color: rgba(255, 69, 0, 0.3);
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  border-top: 0.2rem solid rgb(221, 221, 221, 0.3);
+  border-right: 0.2rem solid rgb(221, 221, 221, 0.3);
+  background-color: rgba(51, 51, 51, 0.11);
+  padding: 0.5rem 1rem;
+  animation: fadeAnimation 2s 1.5s ease-in-out forwards;
+  transition: background-color 0.5s;
+}
+
+.form-btn:hover {
+  background-color: rgb(221, 221, 221, 0.3);
+  color: orangered;
+}

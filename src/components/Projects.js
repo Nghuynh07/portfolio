@@ -5,8 +5,7 @@ import echovalley from "./../img/echovalley.gif";
 const Projects = () => {
   return (
     <>
-      <div className='projects' id='projects'>
-        <h1 className='projects-title'>projects</h1>
+      <div className='projects section' id='projects'>
         <div className={`project`}>
           <div className='img-container'>
             <h3>

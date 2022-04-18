@@ -10,10 +10,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className='nav'>
-        {/* <a href='#logo' className='logo'>
-        .H.N.
-      </a> */}
+      <nav className='nav section'>
         <div className='navbar-links-container'>
           <div className={`${showLinks && "show-links"}`}>
             <a href='#home' className='navbar-link'>

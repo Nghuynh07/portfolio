@@ -1,8 +1,13 @@
 const LandingPage = () => {
   return (
     <>
-      <header id='home'>
+      <header id='home' className='section'>
         <div className='heading-wrapper'>
+          <div className='social-media'>
+            <a href='https://github.com/Nghuynh07'>GitHub</a>
+            <a href='https://www.linkedin.com/in/huynhtnguyen/'>LinkedIn</a>
+            <a href='mailto: july31nth@gmail.com'>Email</a>
+          </div>
           <div className='frontend'>
             <h1 className='frontEndDeveloper'>f</h1>
             <h1 className='frontEndDeveloper'>r</h1>
@@ -32,11 +37,6 @@ const LandingPage = () => {
             <p className='inter'>
               Enjoy minimal designs and feel good about it
             </p>
-          </div>
-          <div className='social-media'>
-            <a href='https://github.com/Nghuynh07'>GitHub</a>
-            <a href='https://www.linkedin.com/in/huynhtnguyen/'>LinkedIn</a>
-            <a href='mailto: july31nth@gmail.com'>Email</a>
           </div>
         </div>
       </header>
