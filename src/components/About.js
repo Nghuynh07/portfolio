@@ -2,7 +2,6 @@ const About = () => {
   return (
     <div className='about section'>
       <div className='about-wrapper'>
-        <h1 className='about-title'>About</h1>
         <article className='about-text-container'>
           <p className='about-text'>
             I remember looking at websites and wondering how these beautiful

@@ -1,7 +1,7 @@
 import evff from "./../img/evff.gif";
 import sweeetmovies from "./../img/sweetmovies.gif";
 import echovalley from "./../img/echovalley.gif";
-
+import { Link, Outlet } from "react-router-dom";
 const Projects = () => {
   return (
     <>

@@ -5,7 +5,7 @@
 @import "./css/landingpage.css";
 @import "./css/about.css";
 @import "./css/contact.css";
-@import "./css/projecttitle.css";
+@import "./css/title.css";
 @import "./css/projects.css";
 @import "./css/media.css";
 
@@ -34,6 +34,6 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100vh 70vh 15vh 100vh;
+  grid-template-rows: 100vh 15vh 70vh 15vh 100vh;
   place-items: center;
 }
