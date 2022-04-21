@@ -1,39 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fredoka:wght@300;400;500;600;700&family=Jura:wght@300;400;500;600;700&display=swap");
-
+@import "./css/bg.css";
 @import "./css/nav.css";
 @import "./css/global.css";
 @import "./css/landingpage.css";
 @import "./css/about.css";
-@import "./css/contact.css";
-@import "./css/title.css";
 @import "./css/projects.css";
+@import "./css/contact.css";
 @import "./css/media.css";
-
-.background {
-  z-index: -1;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: #232526; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to middle,
-    #070707,
-    #232526
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to middle,
-    #070707,
-    #232526
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  display: flex;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100vh 15vh 70vh 15vh 100vh;
-  place-items: center;
-}

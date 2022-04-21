@@ -1,46 +1,43 @@
 const LandingPage = () => {
   return (
-    <>
-      <header id='home' className='section'>
-        <div className='heading-wrapper'>
-          <div className='social-media'>
-            <a href='https://github.com/Nghuynh07'>GitHub</a>
-            <a href='https://www.linkedin.com/in/huynhtnguyen/'>LinkedIn</a>
-            <a href='mailto: july31nth@gmail.com'>Email</a>
-          </div>
-          <div className='frontend'>
-            <h1 className='frontEndDeveloper'>f</h1>
-            <h1 className='frontEndDeveloper'>r</h1>
-            <h1 className='frontEndDeveloper'>o</h1>
-            <h1 className='frontEndDeveloper'>n</h1>
-            <h1 className='frontEndDeveloper'>t</h1>
-            <h1 className='frontEndDeveloper'>-</h1>
-            <h1 className='frontEndDeveloper'>e</h1>
-            <h1 className='frontEndDeveloper'>n</h1>
-            <h1 className='frontEndDeveloper'>d</h1>
-          </div>
-          <div className='developer'>
-            <h1 className='frontEndDeveloper'>d</h1>
-            <h1 className='frontEndDeveloper'>e</h1>
-            <h1 className='frontEndDeveloper'>v</h1>
-            <h1 className='frontEndDeveloper'>e</h1>
-            <h1 className='frontEndDeveloper'>l</h1>
-            <h1 className='frontEndDeveloper'>o</h1>
-            <h1 className='frontEndDeveloper'>p</h1>
-            <h1 className='frontEndDeveloper'>e</h1>
-            <h1 className='frontEndDeveloper'>r</h1>
-          </div>
-          <div className='text-wrapper'>
-            <p className='inter'>
-              Interdisciplinary Visual Art and Pharmacy background
-            </p>
-            <p className='inter'>
-              Enjoy minimal designs and feel good about it
-            </p>
-          </div>
+    <div className='section section-1'>
+      <div className='section-1-email'>
+        <a href='mailto: july31nth@gmail.com'>
+          july31nth<span>@</span>gmail.com
+        </a>
+      </div>
+      <div className='section-1-social-media'>
+        <div className='social-media-wrapper'>
+          <a href='https://www.linkedin.com/in/huynhtnguyen/'>in</a>
         </div>
-      </header>
-    </>
+        <div className='social-media-wrapper'>
+          <a href='https://github.com/Nghuynh07'>gh</a>
+        </div>
+        <div className='social-media-wrapper'>
+          <a href='https://codepen.io/htn1988/'>cp</a>
+        </div>
+      </div>
+      <div className='section-1-wrapper'>
+        <p className='section-1-mynameis'>Hi, I'm</p>
+        <div className='section-1-name-wrapper'>
+          <h1>huynh nguyen</h1>
+        </div>
+        <div className='section-1-frontend-wrapper'>
+          <h3>Front-end developer</h3>
+        </div>
+        <article className='section-1-text-wrapper'>
+          <p>
+            Hello there! I am a <span className='highlight'>self-taught</span> /
+            <span className='highlight'> boot camp </span>
+            programmer. I have the knowledge of a
+            <span className='highlight'>full-stack</span> developer; however, my
+            focus has been on
+            <span className='highlight'> front-end</span> development and I
+            enjoy every moment of it.
+          </p>
+        </article>
+      </div>
+    </div>
   );
 };
 

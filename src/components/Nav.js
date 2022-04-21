@@ -1,51 +1,37 @@
 import resume from "../img/resume.pdf";
 
-import { useState } from "react";
 const Nav = () => {
-  const [showLinks, setShowLinks] = useState(true);
-
-  const displayLinks = () => {
-    setShowLinks(!showLinks);
-  };
-
   return (
-    <>
-      <nav className='nav section'>
-        <div className='navbar-links-container'>
-          <div className={`${showLinks && "show-links"}`}>
-            <a href='#home' className='navbar-link'>
-              home
-            </a>
-          </div>
-
-          <div className={`${showLinks && "show-links"}`}>
-            <a href='#about' className='navbar-link'>
-              about
-            </a>
-          </div>
-          <div className={`${showLinks && "show-links"}`}>
-            <a href='#projects' className='navbar-link'>
-              projects
-            </a>
-          </div>
-          {/* <div className={`${showLinks && "show-links"}`}>
-            <a href='#contact' className='navbar-link'>
-              contact
-            </a>
-          </div> */}
-          <div className={`${showLinks && "show-links"}`}>
-            <a href={resume} className='navbar-link'>
-              resume
-            </a>
-          </div>
-        </div>
-        <div className='hamburger' onClick={displayLinks}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </nav>
-    </>
+    <div className='nav'>
+      <div className='logo'>
+        <a href='http://huynhtn.com/'>H</a>
+      </div>
+      <ul className='nav-links'>
+        <li className='nav-item'>
+          <span></span>
+          <a href='#about' className='nav-link'>
+            about
+          </a>
+        </li>
+        <li className='nav-item'>
+          <span></span>
+          <a href='#projects' className='nav-link'>
+            projects
+          </a>
+        </li>
+        <li className='nav-item'>
+          <span></span>
+          <a href='#contact' className='nav-link'>
+            contact
+          </a>
+        </li>
+        <li className='nav-resume resume'>
+          <a href={resume} className='nav-resume-link'>
+            resume
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 };
 

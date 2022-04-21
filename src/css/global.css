@@ -1,12 +1,22 @@
-* {
+:root {
+  --primary-color: #1ecbe1;
+  --primary-dark: #001b2d;
+  --secondary-color: #e1341e;
+  --white-color: #f2fcfd;
+  --text-color: rgba(255, 255, 255, 0.7);
+}
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline: none;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Jura", cursive;
   border: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: var(--white-color);
 }
 html {
   font-size: 62.5%;
@@ -15,6 +25,14 @@ html {
 }
 
 .hidden {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
+}
+.highlight {
+  color: var(--primary-color);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
 }

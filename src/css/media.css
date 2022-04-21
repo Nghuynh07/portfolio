@@ -1,22 +1,62 @@
+@media (max-width: 1000px) {
+  .myStory {
+    font-size: 2rem;
+  }
+  .section-2-text {
+    font-size: 1.4rem;
+  }
+
+  .section-2-technologies h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-1-email,
+  .section-1-social-media {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo,
+  .nav {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
-  .navbar-links-container {
-    position: absolute;
-    margin-left: 7rem;
-    flex-direction: column;
-    top: 2rem;
-    height: 20rem;
-    right: -4rem;
-    justify-content: space-evenly;
+  .section-1-mynameis {
+    font-size: 2.2rem;
   }
-  .hamburger {
-    margin-left: 2.5rem;
+  .section-1-name-wrapper h1 {
+    font-size: 4.8rem;
   }
-  .navbar-links-container div {
-    height: 4rem;
-    width: 9rem;
-    margin: 0 0.5rem;
+  .section-1-frontend-wrapper h3 {
+    font-size: 3.8rem;
   }
-  .navbar-link {
-    line-height: 4rem;
+  .section-1-text-wrapper p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-1-mynameis {
+    font-size: 2rem;
+  }
+  .section-1-name-wrapper h1 {
+    font-size: 5rem;
+  }
+  .section-1-frontend-wrapper h3 {
+    font-size: 4rem;
+  }
+  .section-1-text-wrapper p {
+    font-size: 1.4rem;
+  }
+  .section-2-left {
+    grid-gap: 1rem;
+  }
+  .section-2-text {
+    font-size: 1.3rem;
   }
 }
