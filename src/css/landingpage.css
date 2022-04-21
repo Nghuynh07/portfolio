@@ -4,7 +4,6 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  /* box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.4); */
   transition: opacity 2s, visibility 2s;
   perspective: 100rem;
 }
@@ -16,6 +15,9 @@
   bottom: 20rem;
   left: -6rem;
   transition: color 0.3s;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0.2s, opacity 0.2s;
 }
 
 .section-1-email a {
@@ -39,6 +41,9 @@
   top: 15rem;
   right: 6rem;
   transform-style: preserve-3d;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0.2s, opacity 0.2s;
 }
 
 .social-media-wrapper {

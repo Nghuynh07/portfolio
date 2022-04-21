@@ -1,6 +1,73 @@
+.hamburger {
+  z-index: 2000;
+  cursor: pointer;
+  display: none;
+  margin-left: 2.5rem;
+  flex-direction: column;
+  align-items: space-evenly;
+  /* outline: 1px solid white; */
+}
+
+.hamburger-line {
+  background-color: var(--secondary-color);
+  margin: 0.5rem 0;
+  border-radius: 10rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.hamburger-line:nth-child(1),
+.hamburger-line:nth-child(3) {
+  width: 3.5rem;
+  height: 0.4rem;
+  transition: transform 0.2s linear;
+}
+.hamburger-line:nth-child(2) {
+  width: 2rem;
+  height: 0.4rem;
+  transition: transform 0.1s linear, opacity 0.1s linear, visibility 0.1s linear;
+}
+
+.change .hamburger-line:nth-child(2) {
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translateY(1.9rem);
+}
+
+.change .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-2rem);
+}
+
+/* .hamburger::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  top: -1rem;
+  left: -1rem;
+  background-color: var(--secondary-color);
+  z-index: 1000;
+}
+
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  bottom: -1rem;
+  left: -1rem;
+  background-color: var(--secondary-color);
+  z-index: 1000;
+} */
+
 .nav {
   position: fixed;
-  top: 0;
+  top: -10vh;
   left: 0;
   height: 10vh;
   width: 100%;
@@ -8,9 +75,24 @@
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  /* box-shadow: 0 0.1rem 0.2rem rgba(255, 255, 255, 0.1); */
   font-family: "Nunito", sans-serif;
-  /* perspective: 100rem; */
+  opacity: 0;
+  visibility: hidden;
+  /* transition: display 0.2s; */
+  animation: navAnimation 0.7s forwards linear;
+}
+
+@keyframes navAnimation {
+  0% {
+    top: -10vh;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 /* logo */
@@ -23,6 +105,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  opacity: 1;
+  visibility: visible;
+  transition: display 0.2s;
 }
 
 .logo::before {

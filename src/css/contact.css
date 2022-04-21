@@ -5,6 +5,7 @@
   display: grid;
   place-content: center;
   grid-template-columns: 80vw;
+  transition: opacity 2s, visibility 2s;
 }
 
 .section-4-wrapper {
@@ -33,15 +34,16 @@
   padding: 2rem;
   grid-gap: 2rem;
   text-align: justify;
-  background-color: rgba(0, 65, 108, 0.3);
   border-radius: 5px;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 2rem rgba(255, 255, 255, 0.1);
   position: relative;
-  transition: transform 0.2s;
+  background-color: transparent;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .section-4-text-wrapper:hover {
   transform: translateY(-10px);
+  background-color: rgba(0, 65, 108, 0.3);
 }
 
 .section-4-text-wrapper p {

@@ -1,8 +1,27 @@
+import { useEffect } from "react";
 import resume from "../img/resume.pdf";
 
 const Nav = () => {
+  const showHamburger = (e) => {
+    const parentContainer = e.target.closest(".nav");
+
+    if (e.target.classList.contains("hamburger")) {
+      parentContainer.classList.toggle("change");
+    }
+  };
+  useEffect(() => {
+    // const hamburger = document.querySelector(".hamburger");
+    // const nav = document.querySelector(".nav");
+    // showHamburger.bind();
+  }, []);
+
   return (
-    <div className='nav'>
+    <div className='nav' onClick={showHamburger}>
+      <div className='hamburger'>
+        <div className='hamburger-line'></div>
+        <div className='hamburger-line'></div>
+        <div className='hamburger-line'></div>
+      </div>
       <div className='logo'>
         <a href='http://huynhtn.com/'>H</a>
       </div>

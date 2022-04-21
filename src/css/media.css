@@ -14,14 +14,41 @@
 @media (max-width: 900px) {
   .section-1-email,
   .section-1-social-media {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
 @media (max-width: 700px) {
-  .logo,
-  .nav {
+  .logo {
     display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    background-color: var(--primary-dark);
+    width: 20rem;
+    height: 50rem;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    right: -5rem;
+    top: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+  }
+  .change .nav-links {
+    display: flex;
+    transform: translate(0);
+  }
+  .nav-item {
+    margin: 1rem 0;
   }
 }
 
@@ -58,5 +85,8 @@
   }
   .section-2-text {
     font-size: 1.3rem;
+  }
+  .section-1 {
+    height: 70vh;
   }
 }

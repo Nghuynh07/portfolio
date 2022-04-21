@@ -30,8 +30,8 @@ const LandingPage = () => {
             Hello there! I am a <span className='highlight'>self-taught</span> /
             <span className='highlight'> boot camp </span>
             programmer. I have the knowledge of a
-            <span className='highlight'>full-stack</span> developer; however, my
-            focus has been on
+            <span className='highlight'> full-stack</span> developer; however,
+            my focus has been on
             <span className='highlight'> front-end</span> development and I
             enjoy every moment of it.
           </p>

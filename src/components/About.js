@@ -6,19 +6,22 @@ const About = () => {
           <h3 className='myStory'>My Story</h3>
           <article className='section-2-text-wrapper'>
             <p className='section-2-text'>
-              Hi there! My name is Huynh and I am a full-stack developer. I
-              remember looking at wesbites and wondering how these beautiful
-              pages were created. I had no idea what ['front-end', 'back-end',
+              Hi there! My name is <span className='highlight'>Huynh</span> and
+              I am a full-stack developer. I remember looking at wesbites and
+              wondering how these beautiful pages were created. I had no idea
+              what [<span className='highlight'>'front-end'</span>, 'back-end',
               'full-stack', 'programmer'] even mean. Over the years, my
               curiosity grew and in March 2021, I decided to slowly transition
               my career towards programming after 10 years of pharmacy setting.
               I immediately enrolled online coding boot camp for 3 languages:
-              ['Java', 'Python', 'Javascript'] and started my journey. About
-              half way through I spark interest in front-end developments.
+              ['Java', 'Python', <span className='highlight'>'JavaScript'</span>
+              ] and started my journey. About half way through I spark interest
+              in front-end developments.
             </p>
             <p className='section-2-text'>
               I struggle often as a self taught programmer; however, I am
-              extremely grateful to found my passion. One year ago, I was a
+              extremely grateful to found my
+              <span className='highlight'> passion</span>. One year ago, I was a
               blank piece of paper coming into programming. Fast-forward to
               today, I am a full-stack developer.
             </p>
