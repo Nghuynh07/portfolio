@@ -13,7 +13,7 @@
   place-content: center;
   width: 100%;
   grid-gap: 4rem;
-  grid-template-columns: repeat(auto-fit, minmax(41rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
 }
 
 .section-2-left {

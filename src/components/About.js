@@ -39,7 +39,7 @@ const About = () => {
             <h3>Other technologies I have worked with:</h3>
             <p>Python (Django/full-stack)</p>
             <p>Java (Springboot/full-stack)</p>
-            <p>Boostrap</p>
+            <p>Bootstrap</p>
             <p>Git/github</p>
             <p>Material UI</p>
           </div>

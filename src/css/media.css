@@ -90,3 +90,47 @@
     height: 70vh;
   }
 }
+
+@media (max-height: 900px) {
+  .section-2 {
+    height: 130vh;
+  }
+  .section-3 {
+    height: 130vh;
+  }
+}
+
+@media (max-height: 700px) {
+  .section-2 {
+    height: 150vh;
+  }
+  .section-3 {
+    height: 150vh;
+  }
+  .section-4 {
+    height: 130vh;
+  }
+}
+@media (max-height: 600px) {
+  .section-2 {
+    height: 170vh;
+  }
+  .section-3 {
+    height: 170vh;
+  }
+  .section-4 {
+    height: 135vh;
+  }
+}
+/* 
+@media (max-height: 500px) {
+  .section-2 {
+    height: 190vh;
+  }
+  .section-3 {
+    height: 190vh;
+  }
+  .section-4 {
+    height: 145vh;
+  }
+} */
