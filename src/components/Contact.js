@@ -16,13 +16,13 @@ const Contact = () => {
               2012 which also helps me becoming a better front-end developer.
             </p>
           </article>
-          <article className='section-4-text-wrapper'>
+          {/* <article className='section-4-text-wrapper'>
             <p>
               If you are a recruiter or employer and like what you see and would
               like to hear more from me and my journey as self-taught
               programmer, please click the button below.
             </p>
-          </article>
+          </article> */}
           <article className='section-4-text-wrapper'>
             <p>Any feed back is appreciated. Thank you</p>
           </article>

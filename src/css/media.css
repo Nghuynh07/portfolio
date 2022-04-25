@@ -1,3 +1,9 @@
+@media (max-width: 1400px) {
+  .section-3 {
+    height: 120vh;
+  }
+}
+
 @media (max-width: 1000px) {
   .myStory {
     font-size: 2rem;
@@ -8,6 +14,11 @@
 
   .section-2-technologies h3 {
     font-size: 1.6rem;
+  }
+
+  .section-3 {
+    /* margin-top: 7rem; */
+    height: 200vh;
   }
 }
 
@@ -119,7 +130,7 @@
     height: 170vh;
   }
   .section-4 {
-    height: 135vh;
+    height: 145vh;
   }
 }
 /* 

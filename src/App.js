@@ -5,6 +5,7 @@ import LandingPage from "./components/LandingPage";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 import Contact from "./components/Contact";
+import Title from "./components/Title";
 function App() {
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
@@ -42,6 +43,7 @@ function App() {
       <Nav />
       <LandingPage />
       <About />
+      <Title title='Projects' />
       <Projects />
       <Contact />
       <Footer />
