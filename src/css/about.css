@@ -14,7 +14,7 @@
   grid-gap: 4rem;
   /* margin: 4rem; */
   padding: clamp(5rem, 3vw, 8rem);
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
 }
 
 .about-left {
