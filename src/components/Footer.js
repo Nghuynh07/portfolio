@@ -1,22 +1,49 @@
 import React from "react";
-
+import {
+  FaTwitter,
+  FaGithub,
+  FaCodepen,
+  FaLinkedinIn,
+  FaMailBulk,
+} from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className='section section-5'>
-      <div className='section-5-content'>
-        <div className='section-5-social-media'>
-          <div className='section-5-social-media-wrapper'>
-            <a href='https://www.linkedin.com/in/huynhtnguyen/'>in</a>
-          </div>
-          <div className='section-5-social-media-wrapper'>
-            <a href='https://github.com/Nghuynh07'>gh</a>
-          </div>
-          <div className='section-5-social-media-wrapper'>
-            <a href='https://codepen.io/htn1988/'>cp</a>
-          </div>
-          <div className='section-5-social-media-wrapper'>
-            <a href='mailto: july31nth@gmail.com'>email</a>
-          </div>
+    <div className='footer section-5'>
+      <div className='footer-content'>
+        <div className='footer-social-media'>
+          <a
+            href='https://www.linkedin.com/in/huynhtnguyen/'
+            className='footer-social-media-link'
+          >
+            <FaLinkedinIn />
+          </a>
+
+          <a
+            href='https://github.com/Nghuynh07'
+            className='footer-social-media-link'
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href='https://codepen.io/htn1988/'
+            className='footer-social-media-link'
+          >
+            <FaCodepen />
+          </a>
+          <a
+            href='https://twitter.com/huyniewin/'
+            className='footer-social-media-link'
+          >
+            <FaTwitter />
+          </a>
+
+          <a
+            href='mailto: july31nth@gmail.com'
+            className='footer-social-media-link'
+          >
+            <FaMailBulk />
+          </a>
         </div>
       </div>
       <div className='copyright'>
