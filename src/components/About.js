@@ -1,11 +1,11 @@
 const About = () => {
   return (
-    <div className='section section-2' id='about'>
-      <div className='section-2-wrapper'>
-        <div className='section-2-left'>
-          <h3 className='myStory'>My Story</h3>
-          <article className='section-2-text-wrapper'>
-            <p className='section-2-text'>
+    <div className='about section-2' id='about'>
+      <div className='about-wrapper'>
+        <div className='about-left'>
+          <h3 className='about-myStory'>My Story</h3>
+          <article className='about-text-wrapper'>
+            <p className='about-text'>
               Hi there! My name is <span className='highlight'>Huynh</span> and
               I am a full-stack developer. I remember looking at wesbites and
               wondering how these beautiful pages were created. I had no idea
@@ -18,24 +18,17 @@ const About = () => {
               ] and started my journey. About half way through I spark interest
               in front-end developments.
             </p>
-            <p className='section-2-text'>
-              I struggle often as a self taught programmer; however, I am
-              extremely grateful to found my
-              <span className='highlight'> passion</span>. One year ago, I was a
-              blank piece of paper coming into programming. Fast-forward to
-              today, I am a full-stack developer.
-            </p>
           </article>
         </div>
-        <div className='section-2-right'>
-          <div className='section-2-technologies'>
+        <div className='about-right'>
+          <div className='about-technologies'>
             <h3>Technologies I fell in love with:</h3>
             <p>Javascript</p>
             <p>React</p>
             <p>Node.js/Express.js</p>
             <p>Sass</p>
           </div>
-          <div className='section-2-technologies'>
+          <div className='about-technologies'>
             <h3>Other technologies I have worked with:</h3>
             <p>Python (Django/full-stack)</p>
             <p>Java (Springboot/full-stack)</p>

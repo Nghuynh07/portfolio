@@ -1,3 +1,57 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 10vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1000;
+  background-color: #333;
+}
+
+/* .logo {
+  margin-left: 5rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border: 3px double var(--primary-color);
+  transform: rotate(45deg);
+}
+
+.logo::before:hover {
+  background-color: pink;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border: 3px double var(--primary-color);
+  transform: rotate(-45deg);
+  opacity: 0.5;
+}
+
+.logo a {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  z-index: 1000;
+  text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
+} */
+
 .hamburger {
   z-index: 2000;
   cursor: pointer;
@@ -5,7 +59,6 @@
   margin-left: 2.5rem;
   flex-direction: column;
   align-items: space-evenly;
-  /* outline: 1px solid white; */
 }
 
 .hamburger-line {
@@ -42,107 +95,6 @@
 .change .hamburger-line:nth-child(3) {
   transform: rotate(-45deg) translateY(-2rem);
 }
-
-/* .hamburger::before {
-  content: "";
-  position: absolute;
-  width: 4rem;
-  height: 0.2rem;
-  top: -1rem;
-  left: -1rem;
-  background-color: var(--secondary-color);
-  z-index: 1000;
-}
-
-.hamburger::after {
-  content: "";
-  position: absolute;
-  width: 4rem;
-  height: 0.2rem;
-  bottom: -1rem;
-  left: -1rem;
-  background-color: var(--secondary-color);
-  z-index: 1000;
-} */
-
-.nav {
-  position: fixed;
-  top: -10vh;
-  left: 0;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  font-family: "Nunito", sans-serif;
-  opacity: 0;
-  visibility: hidden;
-  /* transition: display 0.2s; */
-  animation: navAnimation 0.7s forwards linear;
-}
-
-@keyframes navAnimation {
-  0% {
-    top: -10vh;
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-/* logo */
-
-.logo {
-  margin-left: 5rem;
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  opacity: 1;
-  visibility: visible;
-  transition: display 0.2s;
-}
-
-.logo::before {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  border: 3px double var(--primary-color);
-  transform: rotate(45deg);
-}
-
-.logo::before:hover {
-  background-color: pink;
-}
-
-.logo::after {
-  content: "";
-  position: absolute;
-  width: 3rem;
-  height: 3rem;
-  border: 3px double var(--primary-color);
-  transform: rotate(-45deg);
-  opacity: 0.5;
-}
-
-.logo a {
-  font-size: 3rem;
-  color: var(--secondary-color);
-  font-weight: bold;
-  z-index: 1000;
-  text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-/* logo ends */
-
 .nav-links {
   height: 100%;
   margin-right: 5rem;
@@ -201,13 +153,13 @@
 .nav-link,
 .nav-resume-link {
   font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  text-shadow: 0 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 .nav-link {
   text-transform: capitalize;
   transition: color 0.2s;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .nav-link:hover {
@@ -225,4 +177,47 @@
 }
 .resume:hover {
   background-color: var(--primary-color);
+}
+
+@media (max-width: 722px) {
+  .nav-links {
+    background-color: #666;
+    min-width: 50vw;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    right: -5rem;
+    top: 0;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+    padding: 4rem;
+  }
+
+  .nav-item:first-child {
+    margin-top: 10rem;
+  }
+
+  .resume {
+    margin-top: 5rem;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 5rem;
+  }
+  .change .nav-links {
+    display: flex;
+    transform: translate(0);
+    transition: transform 0.2s;
+  }
+  .nav-item {
+    margin: 1rem 0;
+    transition: transform 0.2s;
+  }
 }

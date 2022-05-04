@@ -24,6 +24,7 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "sass": "^1.51.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -31,7 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:prod": "nodemon server.js"
+    "start:prod": "nodemon server.js",
+    "sass": "sass --source-map --watch sass:css"
   },
   "eslintConfig": {
     "extends": [

@@ -1,22 +1,23 @@
-.section-2 {
-  width: 100%;
-  height: 100vh;
+.about {
+  min-height: 100vh;
   display: grid;
+  background-color: #444;
   place-content: center;
-  grid-template-columns: 65vw;
-  box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.4);
+  grid-template-columns: minmax(60vw, 90vw);
   transition: opacity 2s, visibility 2s;
 }
 
-.section-2-wrapper {
+.about-wrapper {
   display: grid;
   place-content: center;
-  width: 100%;
+  max-width: 100%;
   grid-gap: 4rem;
-  grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+  /* margin: 4rem; */
+  padding: clamp(5rem, 3vw, 8rem);
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 }
 
-.section-2-left {
+.about-left {
   display: grid;
   padding: 2rem;
   grid-gap: 2rem;
@@ -28,31 +29,31 @@
   position: relative;
 }
 
-.section-2-left:hover {
+.about-left:hover {
   background-color: rgba(0, 65, 108, 0.3);
 }
 
-.myStory {
-  font-size: 3rem;
+.about-myStory {
+  font-size: clamp(3rem, 4.5vw, 6rem);
   color: var(--secondary-color);
   letter-spacing: 0.2rem;
 }
 
-.section-2-text-wrapper {
+.about-text-wrapper {
   display: grid;
   grid-gap: 2rem;
 }
 
-.section-2-text {
-  font-size: 1.5rem;
+.about-text {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
   letter-spacing: 0.1rem;
   color: var(--text-color);
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
-.section-2-right {
+.about-right {
   padding: 2rem;
-  background-color: rgba(0, 65, 108, 0.5);
+  background-color: var(--primary-dark);
   display: grid;
   align-content: center;
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
@@ -60,25 +61,26 @@
   transform: background-color 0.2s;
 }
 
-.section-2-right:hover {
-  background-color: var(--primary-dark);
+.about-right:hover {
+  background-color: rgba(0, 65, 108, 0.9);
 }
 
-.section-2-technologies h3 {
+.about-technologies h3 {
   color: var(--primary-color);
   font-size: 2rem;
+  line-height: 1.8;
 }
 
-.section-2-technologies p {
+.about-technologies p {
   margin: 1rem 0 1rem 4rem;
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
   color: var(--text-color);
   letter-spacing: 0.1rem;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
   position: relative;
+  line-height: 1.8;
 }
 
-.section-2-technologies p::before {
+.about-technologies p::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -89,4 +91,16 @@
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
   border-left: 0.5rem solid var(--secondary-color);
+}
+
+@media (max-width: 1350px) {
+  .about-wrapper {
+    grid-template-columns: 60vw;
+  }
+}
+
+@media (max-width: 895px) {
+  .about-wrapper {
+    grid-template-columns: 80vw;
+  }
 }

@@ -1,11 +1,12 @@
 .section-4 {
   width: 100%;
-  height: 100vh;
-  box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.4);
+  min-height: 80vh;
   display: grid;
   place-content: center;
   grid-template-columns: 80vw;
   transition: opacity 2s, visibility 2s;
+  background-color: #333;
+  /* margin: rem 0; */
 }
 
 .section-4-wrapper {
@@ -15,11 +16,6 @@
   grid-template-columns: 80vw;
   padding: 2rem;
   text-align: center;
-}
-
-.section-4-wrapper h3 {
-  color: var(--secondary-color);
-  font-size: 3rem;
 }
 
 .section-4-content {
@@ -37,7 +33,7 @@
   border-radius: 5px;
   box-shadow: 0 0.4rem 2rem rgba(255, 255, 255, 0.1);
   position: relative;
-  background-color: transparent;
+  background-color: #111;
   transition: transform 0.2s, background-color 0.2s;
 }
 
@@ -47,7 +43,7 @@
 }
 
 .section-4-text-wrapper p {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 3vh, 1.4rem);
   letter-spacing: 0.1rem;
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
   color: var(--text-color);
@@ -61,6 +57,7 @@
   align-items: center;
   justify-content: center;
   border: 3px double var(--primary-color);
+  margin-bottom: 5rem;
 }
 
 .section-4-btn-wrapper a {
@@ -78,4 +75,10 @@
 .section-4-btn-wrapper a:hover {
   background-color: var(--primary-color);
   color: var(--primary-dark);
+}
+
+@media (max-width: 1409px) {
+  .section-4-wrapper {
+    grid-gap: 6rem;
+  }
 }

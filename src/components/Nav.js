@@ -16,30 +16,27 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className='nav' onClick={showHamburger}>
+    <nav className='nav' onClick={showHamburger}>
       <div className='hamburger'>
         <div className='hamburger-line'></div>
         <div className='hamburger-line'></div>
         <div className='hamburger-line'></div>
       </div>
-      <div className='logo'>
+      {/* <div className='logo'>
         <a href='http://huynhtn.com/'>H</a>
-      </div>
+      </div> */}
       <ul className='nav-links'>
         <li className='nav-item'>
-          <span></span>
           <a href='#about' className='nav-link'>
             about
           </a>
         </li>
         <li className='nav-item'>
-          <span></span>
           <a href='#projects' className='nav-link'>
             projects
           </a>
         </li>
         <li className='nav-item'>
-          <span></span>
           <a href='#contact' className='nav-link'>
             contact
           </a>
@@ -50,7 +47,7 @@ const Nav = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
