@@ -28,17 +28,12 @@
 }
 
 .footer-social-media-link {
-  width: clamp(2rem, 5vw, 4rem);
-  height: clamp(2rem, 5vw, 4rem);
-  padding: 1rem;
   text-align: center;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(4rem, 7vw, 5rem);
   transform: translateY(0);
   transition: transform 0.2s;
   border-radius: 50%;
-  border: 2px double var(--primary-color);
-  box-shadow: 0 0 0.5rem var(--text-color);
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .footer-social-media-link:hover {

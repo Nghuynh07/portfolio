@@ -14,20 +14,29 @@ const LandingPage = () => {
       <div className='landing-page-social-media'>
         <a
           href='https://www.linkedin.com/in/huynhtnguyen/'
-          className='social-media-link'
+          className='landing-page-social-media-link'
         >
           <FaLinkedinIn />
         </a>
 
-        <a href='https://github.com/Nghuynh07' className='social-media-link'>
+        <a
+          href='https://github.com/Nghuynh07'
+          className='landing-page-social-media-link'
+        >
           <FaGithub />
         </a>
 
-        <a href='https://codepen.io/htn1988/' className='social-media-link'>
+        <a
+          href='https://codepen.io/htn1988/'
+          className='landing-page-social-media-link'
+        >
           <FaCodepen />
         </a>
 
-        <a href='https://twitter.com/huyniewin/' className='social-media-link'>
+        <a
+          href='https://twitter.com/huyniewin/'
+          className='landing-page-social-media-link'
+        >
           <FaTwitter />
         </a>
       </div>
