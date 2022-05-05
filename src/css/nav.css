@@ -102,7 +102,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transform-style: preserve-3d; */
 }
 
 .nav-item,
@@ -113,7 +112,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform-style: preserve-3d; */
 }
 
 .nav-item {

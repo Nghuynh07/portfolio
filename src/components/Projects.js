@@ -8,7 +8,7 @@ import interactiveSlider from "../img/interactiveSlider.png";
 
 const Projects = () => {
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
       <h1 className='section-heading projects-heading'>Projects</h1>
       <div className='projects-content'>
         <div className='project project-1'>

@@ -56,11 +56,12 @@
 }
 
 .landing-page-content-developer {
-  font-size: clamp(2rem, 3.5vw, 4rem);
+  font-size: clamp(2.4rem, 3.5vw, 4rem);
   color: var(--text-color);
   letter-spacing: 0.3rem;
   text-transform: capitalize;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 
 .landing-page-content-text-wrapper {
@@ -69,11 +70,12 @@
 }
 
 .landing-page-content-text {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-size: clamp(1.5rem, 2.5vw, 1.7rem);
   letter-spacing: 0.2rem;
-  color: var(--text-color);
+  color: var(--white-color);
   font-style: italic;
-  line-height: 1.8;
+  font-weight: 600;
+  line-height: 2;
 }
 
 @media (max-width: 1100px) {

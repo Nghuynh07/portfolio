@@ -9,11 +9,7 @@ const Nav = () => {
       parentContainer.classList.toggle("change");
     }
   };
-  useEffect(() => {
-    // const hamburger = document.querySelector(".hamburger");
-    // const nav = document.querySelector(".nav");
-    // showHamburger.bind();
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <nav className='nav' onClick={showHamburger}>
@@ -22,9 +18,7 @@ const Nav = () => {
         <div className='hamburger-line'></div>
         <div className='hamburger-line'></div>
       </div>
-      {/* <div className='logo'>
-        <a href='http://huynhtn.com/'>H</a>
-      </div> */}
+
       <ul className='nav-links'>
         <li className='nav-item'>
           <a href='#about' className='nav-link'>
