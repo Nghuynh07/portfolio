@@ -191,7 +191,7 @@
     right: -5rem;
     top: 0;
     z-index: 1000;
-    transform: translateX(250%);
+    transform: translateX(350%);
     transition: transform 0.2s;
     box-shadow: 0 0 0 50rem rgba(0, 0, 0, 0.6);
     padding: 4rem;
