@@ -5,6 +5,7 @@
   background-color: #444;
   place-content: center;
   grid-template-columns: minmax(60vw, 90vw);
+  overflow-x: hidden;
 }
 
 .about-wrapper {
