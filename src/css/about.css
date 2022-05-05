@@ -1,30 +1,27 @@
 .about {
+  max-width: 100%;
   min-height: 100vh;
   display: grid;
   background-color: #444;
   place-content: center;
   grid-template-columns: minmax(60vw, 90vw);
-  transition: opacity 2s, visibility 2s;
+  transition: transform 1s 0.2s, opacity 1s 0.2s, visibility 1s 0.2s;
 }
 
 .about-wrapper {
   display: grid;
   place-content: center;
-  max-width: 100%;
   grid-gap: 4rem;
-  /* margin: 4rem; */
-  padding: clamp(5rem, 3vw, 8rem);
+  padding: clamp(5rem, 3vw, 8rem) 0;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
 }
 
 .about-left {
   display: grid;
   padding: 2rem;
-  grid-gap: 2rem;
   background-color: transparent;
-  border: 3px double var(--primary-color);
+  border: 3px double var(--white-color);
   border-radius: 5px;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
   transition: background-color 0.2s;
   position: relative;
 }
@@ -33,13 +30,8 @@
   background-color: rgba(0, 65, 108, 0.3);
 }
 
-.about-myStory {
-  font-size: clamp(3rem, 4.5vw, 6rem);
-  color: var(--secondary-color);
-  letter-spacing: 0.2rem;
-}
-
 .about-text-wrapper {
+  margin-top: 4rem;
   display: grid;
   grid-gap: 2rem;
 }
@@ -48,7 +40,7 @@
   font-size: clamp(1.2rem, 3vw, 1.6rem);
   letter-spacing: 0.1rem;
   color: var(--text-color);
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
 }
 
 .about-right {
@@ -56,13 +48,12 @@
   background-color: var(--primary-dark);
   display: grid;
   align-content: center;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   transform: background-color 0.2s;
 }
 
 .about-right:hover {
-  background-color: rgba(0, 65, 108, 0.9);
+  background-color: rgba(1, 28, 47, 0.9);
 }
 
 .about-technologies h3 {
@@ -91,16 +82,4 @@
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
   border-left: 0.5rem solid var(--secondary-color);
-}
-
-@media (max-width: 1350px) {
-  .about-wrapper {
-    grid-template-columns: 60vw;
-  }
-}
-
-@media (max-width: 895px) {
-  .about-wrapper {
-    grid-template-columns: 80vw;
-  }
 }

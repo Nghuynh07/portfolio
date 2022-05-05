@@ -1,10 +1,10 @@
 const Contact = () => {
   return (
-    <div className='section section-4' id='contact'>
-      <div className='section-4-wrapper'>
-        <h3 className='heading'>Let's Talk!</h3>
-        <div className='section-4-content'>
-          <article className='section-4-text-wrapper'>
+    <div className='contact' id='contact'>
+      <div className='contact -wrapper'>
+        <h3 className='section-heading'>Let's Talk!</h3>
+        <div className='contact-content'>
+          <article className='contact-text-wrapper'>
             <p>
               I am currently{" "}
               <span className='highlight'>
@@ -16,23 +16,16 @@ const Contact = () => {
               2012 which also helps me becoming a better front-end developer.
             </p>
           </article>
-          {/* <article className='section-4-text-wrapper'>
-            <p>
-              If you are a recruiter or employer and like what you see and would
-              like to hear more from me and my journey as self-taught
-              programmer, please click the button below.
-            </p>
-          </article> */}
-          <article className='section-4-text-wrapper'>
+          <article className='contact-text-wrapper'>
             <p>Any feed back is appreciated. Thank you</p>
           </article>
-          <article className='section-4-text-wrapper'>
+          <article className='contact-text-wrapper'>
             <p>Otherwise, thank you for visiting!</p>
           </article>
         </div>
-        <div className='section-4-btn-wrapper'>
-          <a href='mailto: july31nth@gmail.com'>my email</a>
-        </div>
+        <a href='mailto: july31nth@gmail.com' className='contact-btn-link'>
+          my email
+        </a>
       </div>
     </div>
   );

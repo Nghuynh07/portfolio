@@ -1,175 +1,240 @@
-import evff from "./../img/evff.gif";
-import sweeetmovies from "./../img/sweetmovies.gif";
-import echovalley from "./../img/echovalley.gif";
-import weatherAPI from "./../img/weatherAPI.PNG";
-import imgSlider from "./../img/img_slider.png";
-import dropDown from "./../img/dropDown.png";
-import slider from "./../img/slider.png";
+import timeTracking from "../img/tracking.png";
+import threeColumn from "../img/threeColumn.png";
+import navigation from "../img/navigation.png";
+import generator from "../img/generator.png";
+import cardComponent from "../img/cardComponent.png";
+import rating from "../img/rating.png";
+import interactiveSlider from "../img/interactiveSlider.png";
+
 const Projects = () => {
   return (
-    <>
-      <div className='section section-3' id='projects'>
-        <div className={`project`}>
-          <div className='img-container'>
-            <h3>
-              0<span>1</span>
-            </h3>
-            <img src={echovalley} alt='project-1' loading='lazy' />
-          </div>
-          <div className='project-wrapper'>
-            <h1 className='project-title'>Echo Valley Family Farm (MERN)</h1>
-            <div className='project-1-technologies sweetmovies'>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>React</p>
-              <p>MongoDB</p>
-              <p>Express</p>
-            </div>
+    <div className='projects'>
+      <h1 className='section-heading projects-heading'>Projects</h1>
+      <div className='projects-content'>
+        <div className='project project-1'>
+          <h3 className='project-title project-1-title'>
+            Time Tracking Dashboard
+          </h3>
+          <img
+            className='project-img'
+            src={timeTracking}
+            alt='Time Tracking Dashboard'
+          />
+
+          {/* <p className='project-text project-1-text'>
+            Time Tracking Dashboard a challenge created by FrontendMentor. The
+            objective of this challenge is to code out the design to make it
+            look as close as possible to the original. The completed solution
+            must be responsive using mobile 375px and desktop 1440px. This
+            project was created using HTML, and custom CSS properties to achieve
+            the result.
+          </p> */}
+
+          <div className='project-links'>
             <a
-              href='https://github.com/Branley22/mern_group_project'
-              className='demo'
+              className='project-link project-1-link'
+              href='https://github.com/Nghuynh07/time_tracking_dashboard'
             >
-              Go To Demo
+              Source Code
             </a>
-            <div className='line'></div>
-          </div>
-        </div>
-        <div className={`project`}>
-          <div className='img-container'>
-            <h3>
-              0<span>2</span>
-            </h3>
-            <img src={sweeetmovies} alt='project-2' loading='lazy' />
-          </div>
-          <div className='project-wrapper'>
-            <h1 className='project-title'>Sweet Movies</h1>
-            <div className='project-1-technologies sweetmovies'>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>React</p>
-              <p>MongoDB</p>
-              <p>Express</p>
-            </div>
             <a
-              href='https://github.com/Branley22/mern_group_project'
-              className='demo'
+              className='project-link project-1-link'
+              href='https://silver-stardust-813866.netlify.app/'
             >
-              Go To Demo
+              Live Demo
             </a>
-            <div className='line'></div>
           </div>
         </div>
-        <div className={`project `}>
-          <div className='img-container'>
-            <h3>
-              0<span>3</span>
-            </h3>
-            <img src={evff} alt='project-3' loading='lazy' />
-          </div>
-          <div className='project-wrapper'>
-            <h1 className='project-title'>Echo Valley Family Farm</h1>
-            <div className='project-1-technologies evff'>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>Java(Springboot)</p>
-            </div>
+        <div className='project project-2'>
+          <h3 className='project-title project-2-title'>Three Column</h3>
+          <img
+            className='project-img'
+            src={threeColumn}
+            alt='Time Tracking Dashboard'
+          />
+
+          {/* <p className='project-text project-2-text'>
+            Time Tracking Dashboard a challenge created by FrontendMentor. The
+            objective of this challenge is to code out the design to make it
+            look as close as possible to the original. The completed solution
+            must be responsive using mobile 375px and desktop 1440px. This
+            project was created using HTML, and custom CSS properties to achieve
+            the result.
+          </p> */}
+
+          <div className='project-links project-2-links'>
             <a
-              href='https://github.com/Nghuynh07/echovalleyfarm'
-              className='demo'
+              className='project-link project-2-link'
+              href='https://github.com/Nghuynh07/3-column-preview-card-component'
             >
-              Go To Demo
+              Source Code
             </a>
-            <div className='line'></div>
-          </div>
-        </div>
-        <div className={`project `}>
-          <div className='img-container'>
-            <h3>
-              0<span>4</span>
-            </h3>
-            <img src={weatherAPI} alt='project-4' loading='lazy' />
-          </div>
-          <div className='project-wrapper'>
-            <h1 className='project-title'>Weather API</h1>
-            <div className='project-1-technologies evff'>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </div>
-            <a href='https://github.com/Nghuynh07/weather_API' className='demo'>
-              Go To Demo
-            </a>
-            <div className='line'></div>
-          </div>
-        </div>
-        <div className={`project `}>
-          <div className='img-container'>
-            <h3>
-              0<span>5</span>
-            </h3>
-            <img src={imgSlider} alt='project-5' loading='lazy' />
-          </div>
-          <div className='project-wrapper'>
-            <h1 className='project-title'>Image Slider</h1>
-            <div className='project-1-technologies evff'>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </div>
             <a
-              href='https://github.com/Nghuynh07/image-slider'
-              className='demo'
+              className='project-link project-2-link'
+              href='https://phenomenal-valkyrie-738185.netlify.app/'
             >
-              Go To Demo
+              Live Demo
             </a>
-            <div className='line'></div>
           </div>
         </div>
-        <div className={`project `}>
-          <div className='img-container'>
-            <h3>
-              0<span>6</span>
-            </h3>
-            <img src={dropDown} alt='project-6' loading='lazy' />
-          </div>
-          <div className='project-wrapper'>
-            <h1 className='project-title'>Dropdown Menu </h1>
-            <div className='project-1-technologies evff'>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </div>
+        <div className='project project-3'>
+          <h3 className='project-title project-3-title'>Dropdown Navigation</h3>
+          <img
+            className='project-img'
+            src={navigation}
+            alt='Time Tracking Dashboard'
+          />
+
+          {/* <p className='project-text project-3-text'>
+            Time Tracking Dashboard a challenge created by FrontendMentor. The
+            objective of this challenge is to code out the design to make it
+            look as close as possible to the original. The completed solution
+            must be responsive using mobile 375px and desktop 1440px. This
+            project was created using HTML, and custom CSS properties to achieve
+            the result.
+          </p> */}
+
+          <div className='project-links'>
             <a
-              href='https://github.com/Nghuynh07/Dropdown-Menu'
-              className='demo'
+              className='project-link project-3-link'
+              href='https://github.com/Nghuynh07/dropdown_navigation'
             >
-              Go To Demo
+              Source Code
             </a>
-            <div className='line'></div>
+            <a
+              className='project-link project-3-link'
+              href='https://bejewelled-mooncake-66f439.netlify.app/'
+            >
+              Live Demo
+            </a>
           </div>
         </div>
-        <div className={`project `}>
-          <div className='img-container'>
-            <h3>
-              0<span>7</span>
-            </h3>
-            <img src={slider} alt='project-7' loading='lazy' />
-          </div>
-          <div className='project-wrapper'>
-            <h1 className='project-title'>Slider</h1>
-            <div className='project-1-technologies evff'>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </div>
-            <a href='https://github.com/Nghuynh07/sliders' className='demo'>
-              Go To Demo
+        <div className='project project-4'>
+          <h3 className='project-title project-4-title'>Advice Generator</h3>
+          <img
+            className='project-img'
+            src={generator}
+            alt='Time Tracking Dashboard'
+          />
+
+          {/* <p className='project-text project-4-text'>
+            Time Tracking Dashboard a challenge created by FrontendMentor. The
+            objective of this challenge is to code out the design to make it
+            look as close as possible to the original. The completed solution
+            must be responsive using mobile 375px and desktop 1440px. This
+            project was created using HTML, and custom CSS properties to achieve
+            the result.
+          </p> */}
+
+          <div className='project-links'>
+            <a
+              className='project-link project-4-link'
+              href='https://github.com/Nghuynh07/advice_gen'
+            >
+              Source Code
             </a>
-            <div className='line'></div>
+            <a
+              className='project-link project-4-link'
+              href='https://polite-starburst-b6eccd.netlify.app/'
+            >
+              Live Demo
+            </a>
+          </div>
+        </div>
+        <div className='project project-5'>
+          <h3 className='project-title project-5-title'>Card Component</h3>
+          <img
+            className='project-img'
+            src={cardComponent}
+            alt='Time Tracking Dashboard'
+          />
+
+          {/* <p className='project-text project-5-text'>
+            Time Tracking Dashboard a challenge created by FrontendMentor. The
+            objective of this challenge is to code out the design to make it
+            look as close as possible to the original. The completed solution
+            must be responsive using mobile 375px and desktop 1440px. This
+            project was created using HTML, and custom CSS properties to achieve
+            the result.
+          </p> */}
+
+          <div className='project-links'>
+            <a
+              className='project-link project-5-link'
+              href='https://github.com/Nghuynh07/card_component'
+            >
+              Source Code
+            </a>
+            <a
+              className='project-link project-5-link'
+              href='https://vermillion-kitten-ab75d1.netlify.app/'
+            >
+              Live Demo
+            </a>
+          </div>
+        </div>
+        <div className='project project-6'>
+          <h3 className='project-title project-6-title'>Rating Component</h3>
+          <img
+            className='project-img'
+            src={rating}
+            alt='Time Tracking Dashboard'
+          />
+          {/* <p className='project-text project-6-text'>
+            Time Tracking Dashboard a challenge created by FrontendMentor. The
+            objective of this challenge is to code out the design to make it
+            look as close as possible to the original. The completed solution
+            must be responsive using mobile 375px and desktop 1440px. This
+            project was created using HTML, and custom CSS properties to achieve
+            the result.
+          </p> */}
+          <div className='project-links'>
+            <a
+              className='project-link project-6-link'
+              href='https://github.com/Nghuynh07/Interactive_Rating_Component'
+            >
+              Source Code
+            </a>
+            <a
+              className='project-link project-6-link'
+              href='https://6268d9933f323459f88242f7--glowing-strudel-c28f1b.netlify.app/'
+            >
+              Live Demo
+            </a>
+          </div>
+        </div>
+        <div className='project project-7'>
+          <h3 className='project-title project-7-title'>Interactive Slider</h3>
+          <img
+            className='project-img'
+            src={interactiveSlider}
+            alt='Time Tracking Dashboard'
+          />
+          {/* <p className='project-text project-7-text'>
+            Time Tracking Dashboard a challenge created by FrontendMentor. The
+            objective of this challenge is to code out the design to make it
+            look as close as possible to the original. The completed solution
+            must be responsive using mobile 375px and desktop 1440px. This
+            project was created using HTML, and custom CSS properties to achieve
+            the result.
+          </p> */}
+          <div className='project-links'>
+            <a
+              className='project-link project-7-link'
+              href='https://github.com/Nghuynh07/sliders'
+            >
+              Source Code
+            </a>
+            <a
+              className='project-link project-7-link'
+              href='https://quiet-gnome-6e0cb9.netlify.app/'
+            >
+              Live Demo
+            </a>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -5,10 +5,9 @@ import LandingPage from "./components/LandingPage";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 import Contact from "./components/Contact";
-import Title from "./components/Title";
 function App() {
   useEffect(() => {
-    const sections = document.querySelectorAll(".section");
+    const sections = document.querySelectorAll(".hidden");
     sections.forEach((section) => {
       section.classList.add("hidden");
     });
@@ -18,13 +17,11 @@ function App() {
       if (!entry.isIntersecting) return;
 
       entry.target.classList.remove("hidden");
-
-      // observer.unobserve(entry.target);
     };
 
     const options = {
       root: null,
-      threshold: 0.1,
+      threshold: 0.3,
     };
 
     const sectionObserver = new IntersectionObserver(sectionCallBack, options);
@@ -38,9 +35,7 @@ function App() {
     <div className='container'>
       <Nav />
       <LandingPage />
-
       <About />
-      <Title title='Projects' />
       <Projects />
       <Contact />
       <Footer />

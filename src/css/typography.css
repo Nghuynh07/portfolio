@@ -1,0 +1,13 @@
+.section-heading {
+  font-size: var(--title);
+  color: var(--primary-color);
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media (max-width: 799px) {
+  .section-heading {
+    margin-top: 5rem;
+  }
+}

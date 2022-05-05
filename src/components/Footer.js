@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className='footer section-5'>
+    <div className='footer'>
       <div className='footer-content'>
         <div className='footer-social-media'>
           <a

@@ -9,32 +9,6 @@
   transition: all 0.2s linear;
 }
 
-.landing-page-email {
-  position: fixed;
-  transform: rotate(-90deg) translateY(-50%);
-  display: inline-block;
-  bottom: 20rem;
-  left: -6rem;
-  transition: color 0.3s;
-  opacity: 1;
-  visibility: visible;
-  transition: visibility 0.2s, opacity 0.2s;
-}
-
-.landing-page-email-link {
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  letter-spacing: 1rem;
-}
-
-.landing-page-email-link:hover {
-  color: var(--primary-color);
-}
-
-.landing-page-email-link span {
-  color: var(--secondary-color);
-}
-
 .landing-page-social-media {
   margin: auto;
   max-width: 80%;
@@ -47,7 +21,7 @@
 
 .landing-page-social-media-link {
   text-align: center;
-  font-size: clamp(4rem, 5vw, 7rem);
+  font-size: clamp(3.5rem, 4.5vw, 6rem);
   transform: translateY(0);
   transition: transform 0.2s;
   border-radius: 50%;
@@ -57,7 +31,7 @@
   transform: translateY(-10px);
 }
 
-.section-1-wrapper {
+.landing-page-content {
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -66,14 +40,14 @@
   text-align: center;
 }
 
-.section-1-mynameis {
+.landing-page-content-mynameis {
   color: var(--text-color);
   font-size: clamp(2.5rem, 2.5vw, 3rem);
   letter-spacing: 0.4rem;
   text-transform: capitalize;
 }
 
-.section-1-name-wrapper h1 {
+.landing-page-content-name {
   font-size: clamp(3.5rem, 5vw, 7rem);
   color: var(--primary-color);
   letter-spacing: 0.5rem;
@@ -81,7 +55,7 @@
   font-weight: 500;
 }
 
-.section-1-frontend-wrapper h3 {
+.landing-page-content-developer {
   font-size: clamp(2rem, 3.5vw, 4rem);
   color: var(--text-color);
   letter-spacing: 0.3rem;
@@ -89,18 +63,16 @@
   font-weight: 400;
 }
 
-.section-1-text-wrapper {
+.landing-page-content-text-wrapper {
   max-width: 50rem;
   text-align: center;
 }
 
-.section-1-text-wrapper p {
+.landing-page-content-text {
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   letter-spacing: 0.2rem;
   color: var(--text-color);
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
   font-style: italic;
-  font-weight: 100;
   line-height: 1.8;
 }
 

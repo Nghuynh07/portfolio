@@ -1,15 +1,13 @@
-.section-4 {
-  width: 100%;
+.contact {
+  max-width: 100%;
   min-height: 80vh;
   display: grid;
   place-content: center;
-  grid-template-columns: 80vw;
-  transition: opacity 2s, visibility 2s;
+  grid-template-columns: minmax(60vw, 90vw);
   background-color: #333;
-  /* margin: rem 0; */
 }
 
-.section-4-wrapper {
+.contact-wrapper {
   display: grid;
   place-content: center;
   grid-gap: 8rem;
@@ -18,14 +16,15 @@
   text-align: center;
 }
 
-.section-4-content {
+.contact-content {
+  margin-top: 5rem;
   display: grid;
   grid-gap: 2rem;
   place-content: center;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
 }
 
-.section-4-text-wrapper {
+.contact-text-wrapper {
   display: grid;
   padding: 2rem;
   grid-gap: 2rem;
@@ -33,16 +32,16 @@
   border-radius: 5px;
   box-shadow: 0 0.4rem 2rem rgba(255, 255, 255, 0.1);
   position: relative;
-  background-color: #111;
+  background-color: #202020;
   transition: transform 0.2s, background-color 0.2s;
 }
 
-.section-4-text-wrapper:hover {
+.contact-text-wrapper:hover {
   transform: translateY(-10px);
-  background-color: rgba(0, 65, 108, 0.3);
+  background-color: #1e1e1e;
 }
 
-.section-4-text-wrapper p {
+.contact-text-wrapper p {
   font-size: clamp(1.2rem, 3vh, 1.4rem);
   letter-spacing: 0.1rem;
   text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
@@ -50,30 +49,21 @@
   line-height: 2;
 }
 
-.section-4-btn-wrapper {
-  width: 20rem;
-  height: 5rem;
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-btn-link {
   border: 3px double var(--primary-color);
-  margin-bottom: 5rem;
-}
-
-.section-4-btn-wrapper a {
   font-size: 2rem;
   text-transform: uppercase;
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
   transition: color 0.2s, background-color 0.2s;
+  margin: 7rem auto 5rem auto;
 }
 
-.section-4-btn-wrapper a:hover {
+.contact-btn-link:hover {
   background-color: var(--primary-color);
   color: var(--primary-dark);
 }

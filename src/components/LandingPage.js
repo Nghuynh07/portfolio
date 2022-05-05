@@ -1,16 +1,14 @@
-import { FaTwitter, FaGithub, FaCodepen, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaGithub,
+  FaCodepen,
+  FaLinkedinIn,
+  FaMailBulk,
+} from "react-icons/fa";
 
 const LandingPage = () => {
   return (
-    <div className='landing-page section-1'>
-      <div className='landing-page-email'>
-        <a
-          href='mailto: july31nth@gmail.com'
-          className='landing-page-email-link'
-        >
-          july31nth<span>@</span>gmail.com
-        </a>
-      </div>
+    <div className='landing-page'>
       <div className='landing-page-social-media'>
         <a
           href='https://www.linkedin.com/in/huynhtnguyen/'
@@ -39,17 +37,19 @@ const LandingPage = () => {
         >
           <FaTwitter />
         </a>
+        <a
+          href='mailto: july31nth@gmail.com'
+          className='landing-page-social-media-link'
+        >
+          <FaMailBulk />
+        </a>
       </div>
-      <div className='section-1-wrapper'>
-        <p className='section-1-mynameis'>Hi, I'm</p>
-        <div className='section-1-name-wrapper'>
-          <h1>huynh nguyen</h1>
-        </div>
-        <div className='section-1-frontend-wrapper'>
-          <h3>Front-end developer</h3>
-        </div>
-        <article className='section-1-text-wrapper'>
-          <p>
+      <div className='landing-page-content'>
+        <p className='landing-page-content-mynameis'>Hi, I'm</p>
+        <h1 className='landing-page-content-name'>huynh nguyen</h1>
+        <h3 className='landing-page-content-developer'>Front-end developer</h3>
+        <article className='landing-page-content-text-wrapper'>
+          <p className='landing-page-content-text'>
             Hello there! I am a <span className='highlight'>self-taught</span> /
             <span className='highlight'> boot camp </span>
             programmer. I have the knowledge of a

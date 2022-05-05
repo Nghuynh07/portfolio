@@ -4,7 +4,6 @@
   --secondary-color: #e1341e;
   --white-color: #f2fcfd;
   --text-color: rgba(255, 255, 255, 0.7);
-
   --title: clamp(5rem, 4vw, 7rem);
 }
 *,
@@ -23,21 +22,6 @@
 }
 html {
   font-size: 62.5%;
-}
-
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.highlight {
-  color: var(--primary-color);
-}
-
-.heading {
-  font-size: var(--text-color);
-  color: var(--text-color);
-  letter-spacing: 0.2rem;
-  font-weight: 300;
 }
 
 .container {
