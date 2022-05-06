@@ -104,13 +104,13 @@
   padding: clamp(0.5rem, 4vw, 1.5rem);
   background-color: var(--primary-color);
   font-size: clamp(1.5rem, 4vw, 1.8rem);
-  /* border-radius: 50% 10% 50% 10%; */
   letter-spacing: 0.1rem;
   font-weight: 400;
   color: var(--white-color);
   background-color: rgba(1, 28, 47, 0.9);
   box-shadow: 0 0 0 0.2rem var(--primary-color);
   transition: transform 0.2s;
+  margin: 1rem 0;
 }
 
 .frontend_mentor:hover {

@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.contact-heading {
+  margin-top: 5rem;
+}
+
 .contact-content {
   margin-top: 5rem;
   display: grid;
@@ -69,6 +73,6 @@
 
 @media (max-width: 1409px) {
   .section-4-wrapper {
-    grid-gap: 6rem;
+    /* grid-gap: 6rem; */
   }
 }
