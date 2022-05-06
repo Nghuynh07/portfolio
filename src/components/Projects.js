@@ -5,12 +5,53 @@ import generator from "../img/generator.png";
 import cardComponent from "../img/cardComponent.png";
 import rating from "../img/rating.png";
 import interactiveSlider from "../img/interactiveSlider.png";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    const callbackFunc = (entries, observer) => {
+      // const [entry] = entries;
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          entry.target.classList.add("project-display");
+        } else {
+          entry.target.classList.remove("project-display");
+        }
+      });
+    };
+
+    const options = {
+      root: null,
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver(callbackFunc, options);
+
+    const content = document.querySelectorAll(".project");
+    content.forEach((c) => {
+      observer.observe(c);
+    });
+  }, []);
+
+  useEffect(() => {
+    const callbackFunc = (entries, observer) => {
+      const [entry] = entries;
+    };
+
+    const options = {
+      root: null,
+      threshold: 0.1,
+    };
+    const observer = new IntersectionObserver(callbackFunc, options);
+    const projects = document.querySelector(".projects");
+
+    observer.observe(projects);
+  }, []);
+
   return (
-    <div className='projects' id='projects'>
-      <h1 className='section-heading projects-heading'>Projects</h1>
-      <div className='projects-content'>
+    <div className='projects section' id='projects'>
+      <h1 className='section-heading projects-heading heading'>Projects</h1>
+      <div className='projects-content '>
         <div className='project project-1'>
           <h3 className='project-title project-1-title'>
             Time Tracking Dashboard

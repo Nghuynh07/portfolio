@@ -4,9 +4,8 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  transition: opacity 2s, visibility 2s;
   perspective: 100rem;
-  transition: all 0.2s linear;
+  transition: transform 5s;
 }
 
 .landing-page-social-media {

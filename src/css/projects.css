@@ -9,6 +9,7 @@
 
 .projects-heading {
   margin-top: 5rem;
+  transition: transform 0.5s;
 }
 
 .projects-content {
@@ -16,7 +17,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   gap: 5rem 2rem;
-  margin: 5rem 0;
+  margin: 5rem 0 10rem 0;
+  transition: transform 1s;
 }
 
 .project {
@@ -25,7 +27,7 @@
   gap: 2rem;
   overflow: hidden;
   opacity: 0.8;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, transform 0.4s;
 }
 .project:hover {
   opacity: 1;
@@ -65,6 +67,13 @@
   transition: background-color 0.2s, color 0.2s;
   border-radius: 5rem 3rem 5rem 2rem;
   letter-spacing: 0.1rem;
+}
+
+.project-display {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: transform 0.4s;
 }
 
 /* Project One Styles */
