@@ -67,7 +67,7 @@ const About = () => {
             </p>
             <a
               href='https://www.frontendmentor.io/profile/Nghuynh07'
-              class='frontend_mentor'
+              className='frontend_mentor'
             >
               FrontendMentor
             </a>

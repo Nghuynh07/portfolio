@@ -8,6 +8,52 @@ import {
 } from "react-icons/fa";
 
 const LandingPage = () => {
+  useEffect(() => {
+    const callbackFunc = (entries) => {
+      const [entry] = entries;
+
+      if (!entry.isIntersecting) {
+        document
+          .querySelector(".landing-page-content")
+          .classList.add("display-landing-page-content");
+      } else {
+        document
+          .querySelector(".landing-page-content")
+          .classList.remove("display-landing-page-content");
+      }
+    };
+
+    const options = {
+      root: null,
+      threshold: 0.2,
+    };
+
+    const observer = new IntersectionObserver(callbackFunc, options);
+    observer.observe(document.querySelector(".landing-page"));
+  }, []);
+
+  useEffect(() => {
+    const landingPage = document.querySelector(".landing-page");
+    const callbackFunc = (entries) => {
+      const [entry] = entries;
+
+      const heading = landingPage.children[0];
+      if (!entry.isIntersecting) {
+        heading.classList.add("display-landing-page-social-media");
+      } else {
+        heading.classList.remove("display-landing-page-social-media");
+      }
+    };
+
+    const options = {
+      root: null,
+      threshold: 0.7,
+    };
+
+    const observer = new IntersectionObserver(callbackFunc, options);
+    observer.observe(document.querySelector(".landing-page-content"));
+  }, []);
+
   return (
     <div className='landing-page'>
       <div className='landing-page-social-media'>
