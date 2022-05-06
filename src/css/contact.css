@@ -70,9 +70,3 @@
   background-color: var(--primary-color);
   color: var(--primary-dark);
 }
-
-@media (max-width: 1409px) {
-  .section-4-wrapper {
-    /* grid-gap: 6rem; */
-  }
-}

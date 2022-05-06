@@ -65,9 +65,9 @@
 .landing-page-content-name {
   font-size: clamp(3.5rem, 5vw, 7rem);
   color: var(--primary-color);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   text-transform: capitalize;
-  font-weight: 500;
+  font-family: "Kanit", sans-serif;
 }
 
 .landing-page-content-developer {

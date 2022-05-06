@@ -9,7 +9,20 @@ const Nav = () => {
       parentContainer.classList.toggle("change");
     }
   };
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const callbackFunc = (entries) => {
+      const [entry] = entries;
+      // console.log(entry);
+    };
+
+    const options = {
+      root: null,
+      threshold: 0.1,
+    };
+    const observer = new IntersectionObserver(callbackFunc, options);
+    const nav = document.querySelector(".nav");
+    observer.observe(nav);
+  }, []);
 
   return (
     <nav className='nav' onClick={showHamburger}>

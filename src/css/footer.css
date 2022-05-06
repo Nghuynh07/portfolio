@@ -65,6 +65,6 @@
 .footer-display {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(150%);
-  transition: transform 1.5s, opacity 1.5s, visibility 1.5s;
+  transform: scale(0);
+  transition: transform 1.75s, opacity 1.75s, visibility 1.75s;
 }
