@@ -26,13 +26,14 @@
   display: grid;
   gap: 2rem;
   overflow: hidden;
-  opacity: 0.8;
-  transition: transform 1.75s;
+  transition: transform 1s, opacity 1s, visibility 1s;
 }
 
 .project-display {
-  transform: scale(0);
-  transition: transform 1.75s;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.7);
+  transition: transform 1s, opacity 1s, visibility 1s;
 }
 
 .project:hover {

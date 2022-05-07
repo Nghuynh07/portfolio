@@ -13,7 +13,7 @@ const About = () => {
     };
     const options = {
       root: null,
-      threshold: 0.2,
+      threshold: 0.1,
     };
 
     const observer = new IntersectionObserver(callback, options);
@@ -33,7 +33,7 @@ const About = () => {
       },
       {
         root: null,
-        threshold: 0.2,
+        threshold: 0.1,
       }
     );
 

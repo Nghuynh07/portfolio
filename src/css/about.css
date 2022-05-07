@@ -24,14 +24,14 @@
   border-radius: 5px;
   transition: background-color 0.2s;
   position: relative;
-  transition: transform 1.75s, opacity 1.75s, visibility 1.75s;
+  transition: transform 1.25s, opacity 1.25s, visibility 1.25s;
 }
 
 .about-left-hidden {
-  transform: translateX(-200%);
+  transform: translateX(-75%);
   opacity: 0;
   visibility: 1;
-  transition: transform 1.75s, opacity 1.75s, visibility 1.75s;
+  transition: transform 1.25s, opacity 1.25s, visibility 1.25s;
 }
 
 .about-left:hover {
@@ -58,14 +58,14 @@
   align-content: center;
   border-radius: 5px;
   transform: background-color 0.2s;
-  transition: transform 1.75s, opacity 1.75s, visibility 1.75s;
+  transition: transform 1s, opacity 1s, visibility 1s;
 }
 
 .about-right-hidden {
-  transform: translateX(200%);
+  transform: translateX(750%);
   opacity: 0;
   visibility: 2;
-  transition: transform 1.75s, opacity 1.75s, visibility 1.75s;
+  transition: transform 1s, opacity 1s, visibility 1s;
 }
 
 .about-right:hover {
