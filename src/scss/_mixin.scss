@@ -5,3 +5,9 @@
   font-weight: $weight;
   text-transform: $transform;
 }
+
+@mixin flex($display, $direction, $align, $justify) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

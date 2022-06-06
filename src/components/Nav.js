@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import resume from "../img/resume.pdf";
 
 const Nav = () => {

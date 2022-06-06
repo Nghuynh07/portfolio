@@ -32,7 +32,7 @@ function App() {
     <div className='container'>
       <Nav />
       <Header />
-      {/* <About /> */}
+      <About />
       {/* <Projects /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}

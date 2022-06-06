@@ -1,5 +1,9 @@
 @use "variable" as *;
 @use "mixin" as *;
+
+/*=============================================
+=            NAV STARTS           =
+=============================================*/
 .nav {
   &__link {
     @include font(1rem, $white, 2px, 500, uppercase);
@@ -47,3 +51,54 @@
     }
   }
 }
+
+/*=============================================
+=            NAV ENDS           =
+=============================================*/
+/*=============================================
+=           HEADER STARTS           =
+=============================================*/
+.header {
+  background-color: $dark-gray;
+  &__link {
+    @include flex(flex, row, center, center);
+    font-size: 1.25rem;
+    border: 2px solid $orangered;
+    padding: 0.85rem;
+    border-radius: 50%;
+    @media screen and (prefers-reduced-motion: no-preference) {
+      svg {
+        transition: transform 0.2s;
+      }
+      &:hover svg {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  &__heading {
+    @include font(72px, $white, 1px, 900, uppercase);
+    line-height: 0.9;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    // font-family: "Rubik", sans-serif;
+    background-color: $light-blue;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__text {
+    @include font(calc(16rem / 16), $white, 1px, 200, auto);
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  &__title {
+    @include font(20px, $light-blue, 1px, 500, capitalize);
+  }
+}
+
+/*=============================================
+=           HEADER ENDS           =
+=============================================*/
