@@ -77,19 +77,27 @@
   }
 
   &__heading {
-    @include font(72px, $white, 1px, 900, uppercase);
+    @include font(
+      clamp(3rem, 2.4718rem + 2.2535vw, 4.5rem),
+      $white,
+      1px,
+      900,
+      uppercase
+    );
+    max-width: 35rem;
+    margin: auto;
     line-height: 0.9;
     text-align: center;
     font-family: "Kanit", sans-serif;
-    // font-family: "Rubik", sans-serif;
     background-color: $light-blue;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    padding: 0.75rem;
   }
 
   &__text {
-    @include font(calc(16rem / 16), $white, 1px, 200, auto);
+    @include font(calc(14rem / 16), $white, 1.5px, 200, auto);
     line-height: 1.8;
     text-align: center;
   }
@@ -102,3 +110,71 @@
 /*=============================================
 =           HEADER ENDS           =
 =============================================*/
+
+/*=============================================
+=            ABOUT STARTS            =
+=============================================*/
+
+.about {
+  &__heading {
+    @include font(
+      clamp(2.25rem, 1.8099rem + 1.8779vw, 3.5rem),
+      $light-blue,
+      1px,
+      700,
+      uppercase
+    );
+    margin: auto;
+  }
+  &__text {
+    @include font(calc(14rem / 16), $white, 1.5px, 200, auto);
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  &__btn {
+    @include font(calc(14rem / 16), $white, 1.5px, 700, uppercase);
+    padding: 0.625rem 1.375rem;
+    background-color: $orangered;
+    margin: auto;
+
+    @media screen and (prefers-reduced-motion: no-preference) {
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+  }
+
+  &__title {
+    @include font(
+      clamp(2rem, 1.6479rem + 1.5023vw, 3rem),
+      $light-blue,
+      1px,
+      300,
+      uppercase
+    );
+    text-align: center;
+  }
+
+  &__p {
+    @include font(calc(14rem / 16), $white, 1.5px, 300, uppercase);
+  }
+
+  @media (min-width: 1000px) {
+    &__heading {
+      margin: 0;
+    }
+    &__text {
+      text-align: left;
+    }
+    &__btn {
+      margin: 0;
+      max-width: fit-content;
+    }
+  }
+}
+
+/*=============================================
+  =           ABOUT ENDS              =
+  =============================================*/

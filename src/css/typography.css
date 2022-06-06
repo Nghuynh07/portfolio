@@ -1,9 +1,0 @@
-.section-heading {
-  font-size: var(--title);
-  color: var(--primary-color);
-  letter-spacing: 0.3rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-family: "Kanit", sans-serif;
-  opacity: 0.8;
-}

@@ -11,6 +11,8 @@
   z-index: 1000;
   background-color: #333;
   position: relative;
+  max-width: 90rem;
+  margin: auto;
 
   &__container {
     padding: 0 1.5625rem;
@@ -90,7 +92,11 @@
 =============================================*/
 
 .header {
-  padding: 5.625rem 1.25rem;
+  padding: 5.625rem 1.25rem 7rem 1.25rem;
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+
   &__container {
     display: grid;
     row-gap: 3rem;
@@ -113,20 +119,106 @@
     row-gap: 1.25rem;
     max-width: 31.25rem;
   }
-
-  //   @media (min-width: 768px) {
-  //     &__container {
-  //       padding-left: 5rem;
-  //     }
-  //     &__links {
-  //       margin: 0;
-  //     }
-  //     &__contents {
-  //       margin: 0;
-  //     }
-  //   }
 }
 
 /*=============================================
 =            HEADER ENDS            =
+=============================================*/
+
+/*=============================================
+=            ABOUT STARTS            =
+=============================================*/
+
+.about {
+  padding: 7rem 1.25rem 7rem 1.25rem;
+  background-color: #111112;
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+  &__container {
+    display: grid;
+    row-gap: 3.5rem;
+  }
+
+  &__section1 {
+    display: grid;
+    max-width: 30rem;
+    margin: auto;
+    row-gap: 1.85rem;
+  }
+  &__section2 {
+    display: grid;
+    row-gap: 2.5rem;
+  }
+  &__technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    row-gap: 2.5rem;
+  }
+
+  &__technology {
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    row-gap: 1rem;
+  }
+  &__svg {
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  &__technology:nth-child(1) {
+    svg {
+      stroke-width: 0.25cm;
+      stroke: #cf3039;
+      fill: #cf3039;
+    }
+  }
+  &__technology:nth-child(2) {
+    svg {
+      stroke-width: 0.25cm;
+      stroke: $white;
+      fill: #227edd;
+    }
+  }
+  &__technology:nth-child(3) {
+    svg {
+      stroke-width: 0.25cm;
+      stroke: #f2a30d;
+      fill: #f2a30d;
+    }
+  }
+  &__technology:nth-child(4) {
+    svg {
+      stroke-width: 0.25cm;
+      stroke: $light-blue;
+      fill: $dark-blue;
+    }
+  }
+  &__technology:nth-child(5) {
+    svg {
+      stroke-width: 0.25cm;
+      stroke: #960e48;
+      fill: #960e48;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    &__container {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      row-gap: 0;
+      align-items: baseline;
+    }
+
+    &__section1 {
+      padding: 3.5rem 1.35rem;
+      background-color: $dark-blue;
+      box-shadow: 4px 4px 0 $light-blue;
+    }
+  }
+}
+
+/*=============================================
+=           ABOUT ENDS              =
 =============================================*/

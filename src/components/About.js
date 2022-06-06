@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import { FaHtml5, FaCss3, FaJs, FaSass, FaGit, FaReact } from "react-icons/fa";
 const About = () => {
   // useEffect(() => {
   //   const about = document.querySelector(".about");
@@ -42,52 +42,64 @@ const About = () => {
 
   return (
     <div className='about' id='about'>
-      <div className='about-wrapper'>
-        <div className='about-left '>
-          <h1 className='section-heading heading'>About</h1>
-          <article className='about-text-wrapper'>
-            <p className='about-text'>
-              Hi there! My name is <span className='highlight'> Huynh </span>{" "}
-              and I am a <span className='highlight'>full-stack</span>{" "}
-              developer. I remember looking at websites and wondering how those
-              beautiful pages were created. I had no idea what [
-              <span className='highlight'>'front-end'</span>, 'back-end',
-              'full-stack', 'programmer'] even meant. Over the years, my
-              curiosity grew and in 2021, I decided to slowly transition my
-              career towards programming after 10 years of pharmacy setting. I
-              immediately enrolled in an{" "}
-              <span className='highlight'>online coding boot camp</span> for 3
-              languages: ['Java', 'Python',{" "}
-              <span className='highlight'>'JavaScript'</span>] and started my
-              journey. About half way through, I sparked interest in front-end
-              developments. I enjoy coding out beautiful and{" "}
-              <span className='highlight'>responsive</span> layouts. I also
-              started taking on challenges on FrontendMentor as a way to improve
-              my front-end skills.
-            </p>
-            <a
-              href='https://www.frontendmentor.io/profile/Nghuynh07'
-              className='frontend_mentor'
-            >
-              FrontendMentor
-            </a>
-          </article>
-        </div>
-        <div className='about-right'>
-          <div className='about-technologies'>
-            <h3>Technologies: </h3>
-            <p>Javascript</p>
-            <p>React</p>
-            <p>Node.js/Express.js</p>
-            <p>Sass</p>
-            <p>Git/github</p>
+      <div className='about__container'>
+        <article className='about__section1'>
+          <h2 className='about__heading'>About</h2>
+          <p className='about__text'>
+            Hi, my name is Huynh. I am a self-taught programmer from Seattle,
+            WA. If I am not working in the pharmacy, I spend most of my free
+            time coding and taking on challenges on FrontendMentor as a way to
+            improve my front-end skills.
+          </p>
+          <a
+            href='https://www.frontendmentor.io/profile/Nghuynh07'
+            className='about__btn'
+          >
+            FrontendMentor
+          </a>
+        </article>
+
+        <section className='about__section2'>
+          <h3 className='about__title'>Technologies</h3>
+          <div className='about__technologies'>
+            <div className='about__technology'>
+              <p className='about__p'>HTML</p>
+              <div className='about__svg'>
+                <FaHtml5 />
+              </div>
+            </div>
+            <div className='about__technology'>
+              <p className='about__p'>CSS</p>
+              <div className='about__svg'>
+                <FaCss3 />
+              </div>
+            </div>
+            <div className='about__technology'>
+              <p className='about__p'>JavaScript</p>
+              <div className='about__svg'>
+                <FaJs />
+              </div>
+            </div>
+            <div className='about__technology'>
+              <p className='about__p'>React</p>
+              <div className='about__svg'>
+                <FaReact />
+              </div>
+            </div>
+            <div className='about__technology'>
+              <p className='about__p'>Sass</p>
+              <div className='about__svg'>
+                <FaSass />
+              </div>
+            </div>
+            <div className='about__technology'>
+              <p className='about__p'>Git/github</p>
+              <div className='about__svg'>
+                <FaGit />
+              </div>
+            </div>
           </div>
-          <div className='about-technologies'>
-            <h3>Other Stacks:</h3>
-            <p>Python (Django/full-stack)</p>
-            <p>Java (Springboot/full-stack)</p>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );

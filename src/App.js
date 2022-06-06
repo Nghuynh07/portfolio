@@ -29,14 +29,14 @@ function App() {
   }, []);
 
   return (
-    <div className='container'>
+    <>
       <Nav />
       <Header />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Contact /> */}
       {/* <Footer /> */}
-    </div>
+    </>
   );
 }
 

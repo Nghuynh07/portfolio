@@ -2,7 +2,7 @@ import { FaTwitter, FaGithub, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className='header'>
+    <header className='header'>
       <div className='header__container'>
         <div className='header__links'>
           <a
@@ -21,21 +21,21 @@ const Header = () => {
             <FaMailBulk />
           </a>
         </div>
-        <div className='header__main'>
-          <h1 className='header__heading'>huynh nguyen</h1>
+        <article className='header__main'>
+          {/* <h1 className='header__heading'>huynh nguyen</h1> */}
+          <h1 className='header__heading'>front-end developer</h1>
           <article className='header__contents'>
             <p className='header__text'>
-              Welcome to my portfolio. I'm a passionate
-              <span className='header__title'> front-end developer</span>. I
-              have been working with <span className='highlight'>HTML</span>,
-              <span className='highlight'> CSS</span>,{" "}
-              <span className='highlight'>JavaScript</span> and{" "}
-              <span className='highlight'>React JS</span>.
+              Welcome to my portfolio. I'm passionate about front-end
+              development using technologies such as{" "}
+              <span className='highlight'>
+                HTML, CSS, JavaScript, and React Js
+              </span>
             </p>
           </article>
-        </div>
+        </article>
       </div>
-    </div>
+    </header>
   );
 };
 
