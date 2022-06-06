@@ -1,0 +1,93 @@
+@use "base" as *;
+@use "variable" as *;
+@use "mixin" as *;
+
+/*=============================================
+=            NAV STARTS            =
+=============================================*/
+
+.nav {
+  position: fixed;
+  z-index: 1000;
+  background-color: #333;
+  position: relative;
+
+  &__container {
+    padding: 0 1.5625rem;
+    min-height: 10vh;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+  }
+  .hamburger {
+    width: 40px;
+    height: 30px;
+    display: grid;
+    overflow: hidden;
+    padding: 3px;
+    cursor: pointer;
+    &__line {
+      width: 100%;
+      height: 3px;
+      background-color: $orangered;
+      pointer-events: none;
+      border-radius: 4rem;
+      transition: transform 0.3s;
+    }
+
+    &__line:nth-child(1) {
+      transform-origin: center;
+    }
+    &__line:nth-child(2) {
+      transform-origin: center;
+    }
+  }
+
+  &__links {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    min-width: 100%;
+    padding: 5rem 0 8rem 0;
+    background-color: $dark-gray;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+    min-height: 50vh;
+    transition: transform 0.5s;
+  }
+
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+    &__links {
+      position: static;
+      top: 10vh;
+      left: 0;
+      max-width: 100%;
+      padding: 0;
+      background-color: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      row-gap: 0;
+      min-height: 10vh;
+      transition: transform 0.5s;
+    }
+  }
+  @media (min-width: 1440px) {
+    &__links {
+      justify-content: flex-end;
+    }
+  }
+}
+
+/*=============================================
+=            NAV ENDS            =
+=============================================*/
+
+/*=============================================
+=            NAV ENDS            =
+=============================================*/

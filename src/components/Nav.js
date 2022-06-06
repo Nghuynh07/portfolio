@@ -2,58 +2,35 @@ import { useEffect } from "react";
 import resume from "../img/resume.pdf";
 
 const Nav = () => {
-  const showHamburger = (e) => {
-    const parentContainer = e.target.closest(".nav");
-
+  const showNav = (e) => {
     if (e.target.classList.contains("hamburger")) {
-      parentContainer.classList.toggle("change");
+      document.querySelector(".nav__links").classList.toggle("toggle__nav");
     }
   };
-  useEffect(() => {
-    const callbackFunc = (entries) => {
-      const [entry] = entries;
-      // console.log(entry);
-    };
-
-    const options = {
-      root: null,
-      threshold: 0.1,
-    };
-    const observer = new IntersectionObserver(callbackFunc, options);
-    const nav = document.querySelector(".nav");
-    observer.observe(nav);
-  }, []);
 
   return (
-    <nav className='nav' onClick={showHamburger}>
-      <div className='hamburger'>
-        <div className='hamburger-line'></div>
-        <div className='hamburger-line'></div>
-        <div className='hamburger-line'></div>
-      </div>
-
-      <ul className='nav-links'>
-        <li className='nav-item'>
-          <a href='#about' className='nav-link'>
+    <nav className='nav' onClick={showNav}>
+      <div className='nav__container'>
+        <div className='hamburger'>
+          <div className='hamburger__line'></div>
+          <div className='hamburger__line'></div>
+          <div className='hamburger__line'></div>
+        </div>
+        <div className='nav__links'>
+          <a href='#about' className='nav__link'>
             about
           </a>
-        </li>
-        <li className='nav-item'>
-          <a href='#projects' className='nav-link'>
+          <a href='#projects' className='nav__link'>
             projects
           </a>
-        </li>
-        <li className='nav-item'>
-          <a href='#contact' className='nav-link'>
+          <a href='#contact' className='nav__link'>
             contact
           </a>
-        </li>
-        <li className='nav-resume resume'>
-          <a href={resume} className='nav-resume-link'>
+          <a href={resume} className='nav__link nav__resume'>
             resume
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   );
 };

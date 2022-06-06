@@ -1,7 +1,7 @@
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Nav from "./components/Nav";
-import LandingPage from "./components/LandingPage";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 import Contact from "./components/Contact";
@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const callbackFunc = (entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
+        // console.log(entry);
       });
     };
 
@@ -31,11 +31,11 @@ function App() {
   return (
     <div className='container'>
       <Nav />
-      <LandingPage />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Header />
+      {/* <About /> */}
+      {/* <Projects /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

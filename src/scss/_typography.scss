@@ -1,0 +1,49 @@
+@use "variable" as *;
+@use "mixin" as *;
+.nav {
+  &__link {
+    @include font(1rem, $white, 2px, 500, uppercase);
+    padding: 0.625rem 2.1875rem;
+    position: relative;
+    &:last-child {
+      padding: 0.625rem 6rem;
+      border: 2px solid $light-blue;
+      border-radius: 5px;
+    }
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      background-color: $orangered;
+      transform: translateX(-50%);
+    }
+    @media screen and (prefers-reduced-motion: no-preference) {
+      &:not(:last-child)::before {
+        transition: width 0.3s;
+      }
+      &:hover.nav__link:not(:last-child):before {
+        width: 60%;
+      }
+      &:last-child {
+        transition: background-color 0.3s, color 0.3s;
+      }
+      &:last-child:hover {
+        background-color: $light-blue;
+        color: $dark-gray;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__link {
+      font-size: calc(14rem / 16);
+      &:last-child {
+        padding: 0.625rem 30px;
+        border: 2px solid $light-blue;
+      }
+    }
+  }
+}

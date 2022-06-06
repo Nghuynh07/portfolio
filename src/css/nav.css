@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,46 +12,6 @@
   box-shadow: 0 0.5rem 3rem rgba(0 0 0 / 0.1);
 }
 
-/* .logo {
-  margin-left: 5rem;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.logo::before {
-  content: "";
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  border: 3px double var(--primary-color);
-  transform: rotate(45deg);
-}
-
-.logo::before:hover {
-  background-color: pink;
-}
-
-.logo::after {
-  content: "";
-  position: absolute;
-  width: 3rem;
-  height: 3rem;
-  border: 3px double var(--primary-color);
-  transform: rotate(-45deg);
-  opacity: 0.5;
-}
-
-.logo a {
-  font-size: 3rem;
-  color: var(--secondary-color);
-  font-weight: bold;
-  z-index: 1000;
-  text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
-} */
 
 .hamburger {
   z-index: 2000;
@@ -216,4 +176,4 @@
     margin: 1rem 0;
     transition: transform 0.2s;
   }
-}
+} */
