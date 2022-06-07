@@ -1,31 +1,45 @@
 const Contact = () => {
   return (
     <div className='contact section' id='contact'>
-      <div className='contact -wrapper'>
-        <h1 className='section-heading contact-heading heading'>Let's Talk!</h1>
-        <div className='contact-content'>
-          <article className='contact-text-wrapper'>
-            <p>
-              I am currently{" "}
-              <span className='highlight'>
-                looking for an opportunity as a front-end developer
-              </span>
-              . I have 10 years work experience in professional pharmacy setting
-              and I believe a lot of it can be carried over into programming as
-              well. I also graduated with BA in Interdisciplinary Visual Art in
-              2012 which also helps me becoming a better front-end developer.
-            </p>
-          </article>
-          <article className='contact-text-wrapper'>
-            <p>Any feed back is appreciated. Thank you</p>
-          </article>
-          <article className='contact-text-wrapper'>
-            <p>Otherwise, thank you for visiting!</p>
-          </article>
-        </div>
-        <a href='mailto: july31nth@gmail.com' className='contact-btn-link'>
+      <div className='contact__container'>
+        <h2 className='contact__heading'>Let's Talk!</h2>
+        <form className='contact__form'>
+          <div className='contact__wrapper'>
+            <label htmlFor='name'>
+              <input
+                className='contact__input'
+                id='name'
+                type='text'
+                placeholder='Your Name'
+              />
+            </label>
+            {/* <p className='error'>Please enter your name</p> */}
+          </div>
+          <div className='contact__wrapper'>
+            <label htmlFor='email'>
+              <input
+                className='contact__input'
+                id='email'
+                type='email'
+                placeholder='Your Email'
+              />
+            </label>
+            {/* <p className='error'>Please enter your email</p> */}
+          </div>
+          <div className='contact__wrapper'>
+            <label htmlFor='email'>
+              <textarea
+                className='contact__input contact__textarea'
+                placeholder='Your Message'
+              ></textarea>
+            </label>
+            <p className='error'>Please enter your message</p>
+          </div>
+          <button className='contact__btn'>send</button>
+        </form>
+        {/* <a href='mailto: july31nth@gmail.com' className='contact-btn-link'>
           my email
-        </a>
+        </a> */}
       </div>
     </div>
   );

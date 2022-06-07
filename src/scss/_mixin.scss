@@ -11,3 +11,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin appMaxSize {
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin svgStyles($stroke, $fill) {
+  stroke-width: 0.25cm;
+  stroke: $stroke;
+  fill: $fill;
+}

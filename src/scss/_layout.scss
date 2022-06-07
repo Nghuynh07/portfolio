@@ -8,18 +8,19 @@
 
 .nav {
   position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
   z-index: 1000;
   background-color: #333;
-  position: relative;
-  max-width: 90rem;
-  margin: auto;
-
   &__container {
+    @include appMaxSize();
     padding: 0 1.5625rem;
     min-height: 10vh;
     display: grid;
     justify-items: end;
     align-items: center;
+    position: relative;
   }
   .hamburger {
     width: 40px;
@@ -93,11 +94,9 @@
 
 .header {
   padding: 5.625rem 1.25rem 7rem 1.25rem;
-  max-width: 90rem;
-  margin-right: auto;
-  margin-left: auto;
-
+  margin-top: 10vh;
   &__container {
+    @include appMaxSize();
     display: grid;
     row-gap: 3rem;
   }
@@ -132,12 +131,10 @@
 .about {
   padding: 7rem 1.25rem 7rem 1.25rem;
   background-color: #111112;
-  max-width: 90rem;
-  margin-right: auto;
-  margin-left: auto;
   &__container {
+    @include appMaxSize();
     display: grid;
-    row-gap: 3.5rem;
+    row-gap: 10rem;
   }
 
   &__section1 {
@@ -170,37 +167,27 @@
   }
   &__technology:nth-child(1) {
     svg {
-      stroke-width: 0.25cm;
-      stroke: #cf3039;
-      fill: #cf3039;
+      @include svgStyles(#cf3039, #cf3039);
     }
   }
   &__technology:nth-child(2) {
     svg {
-      stroke-width: 0.25cm;
-      stroke: $white;
-      fill: #227edd;
+      @include svgStyles($white, #227edd);
     }
   }
   &__technology:nth-child(3) {
     svg {
-      stroke-width: 0.25cm;
-      stroke: #f2a30d;
-      fill: #f2a30d;
+      @include svgStyles(#f2a30d, #f2a30d);
     }
   }
   &__technology:nth-child(4) {
     svg {
-      stroke-width: 0.25cm;
-      stroke: $light-blue;
-      fill: $dark-blue;
+      @include svgStyles($light-blue, $light-blue);
     }
   }
   &__technology:nth-child(5) {
     svg {
-      stroke-width: 0.25cm;
-      stroke: #960e48;
-      fill: #960e48;
+      @include svgStyles(#960e48, #960e48);
     }
   }
 
@@ -221,4 +208,86 @@
 
 /*=============================================
 =           ABOUT ENDS              =
+=============================================*/
+
+/*=============================================
+=           CONTACT STARTS              =
+=============================================*/
+
+.contact {
+  padding: 7rem 1.25rem 7rem 1.25rem;
+  &__container {
+    @include appMaxSize();
+    display: grid;
+    row-gap: 3.5rem;
+  }
+  &__form {
+    display: grid;
+    row-gap: 1.25rem;
+  }
+
+  &__wrapper {
+    display: grid;
+    min-height: 4rem;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 0.7rem;
+    color: $dark-blue;
+    font-size: 1rem;
+    width: 100%;
+    &::placeholder {
+      color: $dark-blue;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__textarea {
+    max-width: 18rem;
+    min-width: 100%;
+    max-height: 15rem;
+    min-height: 8rem;
+  }
+
+  @media (min-width: 768px) {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__form {
+      justify-self: center;
+      max-width: 35rem;
+      padding: 1.75rem;
+      border: 3px solid rgba($orangered, 0.4);
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+}
+
+/*=============================================
+=           CONTACT ENDS             =
+=============================================*/
+
+/*=============================================
+=           FOOTER STARTS              =
+=============================================*/
+.footer {
+  background-color: #333;
+  padding: 5rem 0;
+  &__container {
+    @include appMaxSize();
+    display: grid;
+    justify-items: center;
+    row-gap: 2.25rem;
+  }
+
+  &__media {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+  }
+}
+/*=============================================
+=           FOOTER ENDS              =
 =============================================*/

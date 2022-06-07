@@ -7,17 +7,17 @@ const Header = () => {
         <div className='header__links'>
           <a
             href='https://www.linkedin.com/in/huynhtnguyen/'
-            className='header__link'
+            className='social__link'
           >
             <FaLinkedinIn />
           </a>
-          <a href='https://github.com/Nghuynh07' className='header__link'>
+          <a href='https://github.com/Nghuynh07' className='social__link'>
             <FaGithub />
           </a>
-          <a href='https://twitter.com/huyniewin/' className='header__link'>
+          <a href='https://twitter.com/huyniewin/' className='social__link'>
             <FaTwitter />
           </a>
-          <a href='mailto: july31nth@gmail.com' className='header__link'>
+          <a href='mailto: july31nth@gmail.com' className='social__link'>
             <FaMailBulk />
           </a>
         </div>

@@ -60,21 +60,6 @@
 =============================================*/
 .header {
   background-color: $dark-gray;
-  &__link {
-    @include flex(flex, row, center, center);
-    font-size: 1.25rem;
-    border: 2px solid $orangered;
-    padding: 0.85rem;
-    border-radius: 50%;
-    @media screen and (prefers-reduced-motion: no-preference) {
-      svg {
-        transition: transform 0.2s;
-      }
-      &:hover svg {
-        transform: translateY(-5px);
-      }
-    }
-  }
 
   &__heading {
     @include font(
@@ -177,4 +162,43 @@
 
 /*=============================================
   =           ABOUT ENDS              =
+  =============================================*/
+/*=============================================
+  =           CONTACT STARTS              =
+  =============================================*/
+.contact {
+  &__heading {
+    @include font(
+      clamp(2.25rem, 1.8099rem + 1.8779vw, 3.5rem),
+      $light-blue,
+      1px,
+      700,
+      uppercase
+    );
+    text-align: center;
+  }
+
+  &__btn {
+    @include font(calc(14rem / 16), $white, 2px, 700, uppercase);
+    padding: 0.625rem 4rem;
+    margin-right: auto;
+    background-color: $orangered;
+    cursor: pointer;
+    @media screen and (prefers-reduced-motion: no-preference) {
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &__heading {
+      align-self: center;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  }
+}
+/*=============================================
+  =           CONTACT ENDS              =
   =============================================*/

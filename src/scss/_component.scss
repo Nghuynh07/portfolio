@@ -1,0 +1,18 @@
+@use "variable" as *;
+@use "mixin" as *;
+
+.social__link {
+  @include flex(flex, row, center, center);
+  font-size: 1.25rem;
+  border: 2px solid $orangered;
+  padding: 0.85rem;
+  border-radius: 50%;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    svg {
+      transition: transform 0.2s;
+    }
+    &:hover svg {
+      transform: translateY(-5px);
+    }
+  }
+}
