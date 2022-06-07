@@ -1,55 +1,17 @@
-import { useEffect } from "react";
 import { FaHtml5, FaCss3, FaJs, FaSass, FaGit, FaReact } from "react-icons/fa";
 const About = () => {
-  // useEffect(() => {
-  //   const about = document.querySelector(".about");
-  //   const aboutLeftSide = document.querySelector(".about-left");
-
-  //   const callback = (entries, observer) => {
-  //     const [entry] = entries;
-  //     if (!entry.isIntersecting)
-  //       aboutLeftSide.classList.add("about-left-hidden");
-  //     else aboutLeftSide.classList.remove("about-left-hidden");
-  //   };
-  //   const options = {
-  //     root: null,
-  //     threshold: 0.1,
-  //   };
-
-  //   const observer = new IntersectionObserver(callback, options);
-  //   observer.observe(about);
-  // }, []);
-
-  // useEffect(() => {
-  //   const about = document.querySelector(".about");
-  //   const aboutRightSide = document.querySelector(".about-right");
-
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       const [entry] = entries;
-  //       if (!entry.isIntersecting)
-  //         aboutRightSide.classList.add("about-right-hidden");
-  //       else aboutRightSide.classList.remove("about-right-hidden");
-  //     },
-  //     {
-  //       root: null,
-  //       threshold: 0.1,
-  //     }
-  //   );
-
-  //   observer.observe(about);
-  // }, []);
-
   return (
     <div className='about' id='about'>
       <div className='about__container'>
         <article className='about__section1'>
           <h2 className='about__heading'>About</h2>
           <p className='about__text'>
-            Hi, my name is Huynh. I am a self-taught programmer from Seattle,
-            WA. If I am not working in the pharmacy, I spend most of my free
-            time coding and taking on challenges on FrontendMentor as a way to
-            improve my front-end skills.
+            Hi, my name is Huynh. I am a self-taught and self-motivated
+            programmer from Seattle, Washington. My current occupation is
+            pharmacy technician; however, my dream career is to become a
+            front-end developer. If I am not working in the pharmacy, I spend
+            most of my free time coding and taking on challenges on
+            FrontendMentor.
           </p>
           <a
             href='https://www.frontendmentor.io/profile/Nghuynh07'

@@ -1,3 +1,9 @@
+@use "variable" as *;
+
+.highlight {
+  color: $light-blue;
+}
+
 .change .hamburger__line:nth-child(2) {
   // transform: translateX(-100%);
 }
@@ -17,4 +23,5 @@
 .error {
   color: red;
   font-size: calc(12rem / 16);
+  min-height: 1.5rem;
 }

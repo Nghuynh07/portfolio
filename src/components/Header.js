@@ -26,10 +26,10 @@ const Header = () => {
           <h1 className='header__heading'>front-end developer</h1>
           <article className='header__contents'>
             <p className='header__text'>
-              Welcome to my portfolio. I'm passionate about front-end
+              Welcome to my portfolio. I am passionate about front-end
               development using technologies such as{" "}
               <span className='highlight'>
-                HTML, CSS, JavaScript, and React Js
+                HTML, CSS, SASS, JavaScript, and React Js
               </span>
             </p>
           </article>

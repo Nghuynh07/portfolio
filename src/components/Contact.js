@@ -13,7 +13,7 @@ const Contact = () => {
                 placeholder='Your Name'
               />
             </label>
-            {/* <p className='error'>Please enter your name</p> */}
+            <p className='error'></p>
           </div>
           <div className='contact__wrapper'>
             <label htmlFor='email'>
@@ -24,7 +24,7 @@ const Contact = () => {
                 placeholder='Your Email'
               />
             </label>
-            {/* <p className='error'>Please enter your email</p> */}
+            <p className='error'></p>
           </div>
           <div className='contact__wrapper'>
             <label htmlFor='email'>
@@ -33,7 +33,7 @@ const Contact = () => {
                 placeholder='Your Message'
               ></textarea>
             </label>
-            <p className='error'>Please enter your message</p>
+            <p className='error'></p>
           </div>
           <button className='contact__btn'>send</button>
         </form>
