@@ -6,12 +6,12 @@ const About = () => {
         <article className='about__section1'>
           <h2 className='about__heading'>About</h2>
           <p className='about__text'>
-            Hi, my name is Huynh. I am a self-taught and self-motivated
-            programmer from Seattle, Washington. My current occupation is
-            pharmacy technician; however, my dream career is to become a
-            front-end developer. If I am not working in the pharmacy, I spend
-            most of my free time coding and taking on challenges on Frontend
-            Mentor(<abbr title='Frontend Mentor'>FEM</abbr>).
+            Hi, my name is Huynh. I am a self-taught programmer from Seattle,
+            Washington. My current occupation is pharmacy technician; however,
+            my dream career is to become a front-end developer. If I am not
+            working in the pharmacy, I spend most of my free time coding and
+            taking on challenges on Frontend Mentor(
+            <abbr title='Frontend Mentor'>FEM</abbr>).
           </p>
           <a
             href='https://www.frontendmentor.io/profile/Nghuynh07'

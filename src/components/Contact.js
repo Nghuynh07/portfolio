@@ -5,7 +5,7 @@ const Contact = () => {
         <h2 className='contact__heading'>Let's Talk!</h2>
         <form
           className='contact__form'
-          action='https://formsubmit.co/july31nth@gmail.com'
+          action='mailto:july31nth@gmail.com'
           method='POST'
           encType='text/html'
         >
@@ -18,7 +18,7 @@ const Contact = () => {
                 placeholder='Your Name'
               />
             </label>
-            <p className='error'></p>
+            {/* <p className='error'></p> */}
           </div>
           <div className='contact__wrapper'>
             <label htmlFor='email'>
@@ -29,7 +29,7 @@ const Contact = () => {
                 placeholder='Your Email'
               />
             </label>
-            <p className='error'></p>
+            {/* <p className='error'></p> */}
           </div>
           <div className='contact__wrapper'>
             <label htmlFor='email'>
@@ -38,7 +38,7 @@ const Contact = () => {
                 placeholder='Your Message'
               ></textarea>
             </label>
-            <p className='error'></p>
+            {/* <p className='error'></p> */}
           </div>
           <button className='contact__btn'>send</button>
         </form>
