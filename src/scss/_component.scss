@@ -9,10 +9,12 @@
   border-radius: 50%;
   @media screen and (prefers-reduced-motion: no-preference) {
     svg {
-      transition: transform 0.2s;
+      will-change: transform;
+      transition: transform 0.2s ease-out;
     }
     &:hover svg {
       transform: translateY(-5px);
+      transition: transform 0.2s ease-in;
     }
   }
 }

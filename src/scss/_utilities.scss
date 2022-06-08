@@ -2,6 +2,8 @@
 
 .highlight {
   color: $light-blue;
+  font-size: calc(16rem / 16);
+  font-weight: 700;
 }
 
 .change .hamburger__line:nth-child(2) {

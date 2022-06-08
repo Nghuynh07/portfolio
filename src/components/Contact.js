@@ -3,7 +3,12 @@ const Contact = () => {
     <div className='contact section' id='contact'>
       <div className='contact__container'>
         <h2 className='contact__heading'>Let's Talk!</h2>
-        <form className='contact__form'>
+        <form
+          className='contact__form'
+          action='https://formsubmit.co/july31nth@gmail.com'
+          method='POST'
+          encType='text/html'
+        >
           <div className='contact__wrapper'>
             <label htmlFor='name'>
               <input

@@ -28,9 +28,9 @@ const Header = () => {
             <p className='header__text'>
               Welcome to my portfolio. I am passionate about front-end
               development using technologies such as{" "}
-              <span className='highlight'>
-                HTML, CSS, SASS, JavaScript, and React Js
-              </span>
+              <em className='highlight'>
+                HTML, CSS, SASS, JavaScript, and React
+              </em>
             </p>
           </article>
         </article>

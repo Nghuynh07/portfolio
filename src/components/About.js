@@ -10,8 +10,8 @@ const About = () => {
             programmer from Seattle, Washington. My current occupation is
             pharmacy technician; however, my dream career is to become a
             front-end developer. If I am not working in the pharmacy, I spend
-            most of my free time coding and taking on challenges on
-            FrontendMentor.
+            most of my free time coding and taking on challenges on Frontend
+            Mentor(<abbr title='Frontend Mentor'>FEM</abbr>).
           </p>
           <a
             href='https://www.frontendmentor.io/profile/Nghuynh07'
